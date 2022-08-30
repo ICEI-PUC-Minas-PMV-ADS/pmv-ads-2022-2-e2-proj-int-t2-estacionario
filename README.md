@@ -1,21 +1,21 @@
-# TÍTULO DO PROJETO
+# Estacionario
 
-`CURSO` - Tecnologia em Análise e Desenvolvimento de Sistemas
+`Analise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA` - Projeto: Desenvolvimento de uma Aplicação Interativa
+`Projeto: Desenvolvimento de uma Aplicação Interativa`
 
-`SEMESTRE` - Segundo Semestre 
+`2º SEMESTRE`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Felipe de Paula
+* Cristian Balbi de Faria Junior
+* Felipe Ferreira Moraes de Paula
 * Fernando Maia Torres Alves
-* Júnior
 * Jhody Mike Possidonio Da Silva
 * Marcos Guimarães Costa Rocha
-* Vinícius Souza
+* Vinicius Souza
 
 ## Orientador
 

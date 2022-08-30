@@ -1,23 +1,25 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+'CURSO' - Tecnologia em Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+`DISCIPLINA` - Projeto: Desenvolvimento de uma Aplicação Interativa
 
-`SEMESTRE`
+`SEMESTRE` - Segundo Semestre 
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Felipe de Paula
+* Fernando Maia Torres Alves
+* Júnior
+* Jhody Mike Possidonio Da Silva
+* Marcos Guimarães Costa Rocha
+* Vinícius Souza
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 

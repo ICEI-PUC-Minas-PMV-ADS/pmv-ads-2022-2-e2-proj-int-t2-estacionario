@@ -1,6 +1,6 @@
 # TÍTULO DO PROJETO
 
-'CURSO' - Tecnologia em Análise e Desenvolvimento de Sistemas
+`CURSO` - Tecnologia em Análise e Desenvolvimento de Sistemas
 
 `DISCIPLINA` - Projeto: Desenvolvimento de uma Aplicação Interativa
 

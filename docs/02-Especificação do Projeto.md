@@ -85,23 +85,23 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-| RF-001 | O site deve apresentar a funcionalidade de buscador (search) | ALTA | 
-| RF-002 | O site deve apresentar categorias de vagas para facilitar a busca dos usuários | ALTA |
-| RF-003 | O site deve apresentar as informações do estabelecimento e serviços extras oferecidos |ALTA |
-| RF-004 | O site deve apresentar mecanismos para avaliação dos estabelecimentos através de comentário e notas | MÉDIA |
-| RF-005 | O site deve recomendar estabelecimentos de acordo com o perfil de cada usuário | BAIXO |
-| RF-006 | O site deve possuir um filtro para refinar a busca do usuário | ALTA |
-| RF-007 | O site deve possuir uma área de login para que o usuário possa fazer efetuar reservas | ALTA |
-| RF-008 | O site deve possuir uma área de login para as empresas fazer a gestão de suas reservas | ALTA |
-| RF-009 | O site deve possuir uma área para cadastrar novos usuários e empresas | ALTA |
-| RF-010 | O site deve possuir uma área para cadastrar novos prestadores de serviços | BAIXA |
-| RF-011 | O site deve possuir dentro da área de login da empresa um resumo de feedback dos usuários | BAIXA |
-| RF-012 | O site deve possuir um canal de comunicação direto com os administradores dentro da área de login de usuários e empresas | BAIXA | 
-| RF-013 | O site deve ter dentro da área de login de usuários uma sessão de locais favoritados | MÉDIA |
-| RF-014 | O site deve apresentar em sua home apenas os estabelecimentos mais bem avaliados | BAIXA |
-| RF-015 | O site deve possuir uma categoria “Sobre Nós” | BAIXA | 
-| RF-016 | O site deve possuir uma categoria “Fale Conosco” | BAIXA |
-| RF-017 | O site deve possuir um contador de quantidades de vagas disponíveis e totais dos estabelecimentos | BAIXO |
+| RF-001 | A aplicação deve apresentar a funcionalidade de buscador (search) | ALTA | 
+| RF-002 | A aplicação deve apresentar categorias de vagas para facilitar a busca dos usuários | ALTA |
+| RF-003 | A aplicação deve apresentar as informações do estabelecimento e serviços extras oferecidos |ALTA |
+| RF-004 | A aplicação deve apresentar mecanismos para avaliação dos estabelecimentos através de comentário e notas | MÉDIA |
+| RF-005 | A aplicação deve recomendar estabelecimentos de acordo com o perfil de cada usuário | BAIXO |
+| RF-006 | A aplicação deve possuir um filtro para refinar a busca do usuário | ALTA |
+| RF-007 | A aplicação deve possuir uma área de login para que o usuário possa fazer reservas de vagas| ALTA |
+| RF-008 | A aplicação deve possuir uma área de login para as empresas fazer a gestão de suas reservas | ALTA |
+| RF-009 | A aplicação deve possuir uma área para cadastrar novos usuários e empresas | ALTA |
+| RF-010 | A aplicação deve possuir uma área para cadastrar novos prestadores de serviços | BAIXA |
+| RF-011 | A aplicação deve possuir dentro da área de login da empresa um resumo de feedback dos usuários | BAIXA |
+| RF-012 | A aplicação deve possuir um canal de comunicação direto com os administradores dentro da área de login de usuários e empresas | BAIXA | 
+| RF-013 | A aplicação deve ter dentro da área de login de usuários uma sessão de locais favoritados | MÉDIA |
+| RF-014 | A aplicação deve apresentar em sua home apenas os estabelecimentos mais bem avaliados | BAIXA |
+| RF-015 | A aplicação deve possuir uma categoria “Sobre Nós” | BAIXA | 
+| RF-016 | A aplicação deve possuir uma categoria “Fale Conosco” | BAIXA |
+| RF-017 | A aplicação deve possuir um contador de quantidades de vagas disponíveis e totais dos estabelecimentos | BAIXO |
 
 ### Requisitos não Funcionais
 
@@ -109,9 +109,11 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O site deve ser responsivo | ALTA | 
-|RNF-002| O site deve ser compatível com os principais navegadores | ALTA | 
-|RNF-003| O site deve ter acessibilidade digital, seguindo as regras da WCAG 2.1 conforme normas da W3C | MÉDIA |
+|RNF-001| O site da aplicação deve ser responsivo | ALTA | 
+|RNF-002| O site da aplicação deve ser compatível com os principais navegadores | ALTA | 
+|RNF-003| O site da aplicação deve ter acessibilidade digital, seguindo as regras da WCAG 2.1 conforme normas da W3C | MÉDIA |
+|RNF-004| O site da aplicação deve utilixar a linguagem c# | ALTA |
+|RNF-005| O site da aplicação deve utilizar o banco de dados SQL | ALTA |
 
 ## Restrições
 
@@ -120,10 +122,9 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |ID   | Restrição                                             |
 |-----|-------------------------------------------------------|
 |RE-01| O projeto deverá ser entregue no final do semestre, não podendo extrapolar a data de 31/11/2022 |
-|RE-02| O site deve se restringir às tecnologias básicas da Web no Frontend e backend |
-|RE-03| A equipe não pode subcontratar uma empresa para ajudar a desenvolver o design do site |
-|RE-04| A equipe não pode subcontratar uma empresa para a criação do conteúdo do site |
-|RE-05| O site só poderá ser lançado se os requisitos de funcionalidade e acessibilidade quando forem atendidas |
+|RE-02| A equipe não pode subcontratar uma empresa para ajudar a desenvolver o design do site |
+|RE-03| A equipe não pode subcontratar uma empresa para a criação do conteúdo do site |
+|RE-04| A aplicação só poderá ser lançado se os requisitos de funcionalidade e acessibilidade quando forem atendidas |
 
 ## Diagrama de Casos de Uso
 

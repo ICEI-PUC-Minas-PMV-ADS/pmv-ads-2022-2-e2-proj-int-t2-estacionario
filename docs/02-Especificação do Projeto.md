@@ -53,7 +53,7 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 |Motivações: | <ul><li> Frequentar estabelecimentos com poucas escadas ou rampas.</li><li> Estacionar em locais com vagas preferênciais.</li></ul>|
 |Hobbies:|<ul><li>Fotografia</li><li>Leitura</li></ul>|
 
-|Michael Oliveira|<img src="img/MachaelOleiveira.jpg" width="100">|
+|Michael Oliveira|<img src="img/MichaelOliveira.jpg" width="100">|
 |---|---| 
 |Idade: 31 anos|Ocupação: Engenheiro Civil|
 |Tipo de Veículo: Sedan||

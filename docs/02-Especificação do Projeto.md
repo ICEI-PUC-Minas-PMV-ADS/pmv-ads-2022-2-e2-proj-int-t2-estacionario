@@ -18,14 +18,14 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 |Motivações: | <ul><li>Visitar clientes constantemente.</li><li> Saber de antemão onde tem estacionamentos próximos dos clientes</li><li>Reservar vagas para não atrasar nos seus encontros</li></ul>|
 |Hobbies:|<ul><li>Viajar</li><li>Pescar</li></ul>|
 
-|Carlos Alves||
+|Carlos Alves|<img src="img/CarlosAlves.jpg" width="100">|
 |---|---| 
 |Idade: 29 anos|Ocupação: Scrum Master|
 |Tipo de Veículo: Scooter||
 |Motivações: | <ul><li>Gosta da segurança e praticidade de um estacionamento privativo.</li><li> Economizar na mensalidade/anuidade ao pagar o estacionamento.</li><li>Estacionar em locais em que haja convênio com a empresa em que trabalha</li></ul>|
 |Hobbies:|<ul><li>Jogar videogames</li><li>Praticar musculação</li></ul>|
 
-|Diego Costa||
+|Diego Costa|<img src="img/DiegoCosta.jpg" width="100">|
 |---|---| 
 |Idade: 45 anos|Ocupação: Empresário|
 |Tipo de Veículo: Picape 4x4||
@@ -39,7 +39,7 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 |Motivações: | <ul><li> Buscar seu tio que fez uma operação na perna.</li><li> Estacionar próximo o hospital para facilitar para seu passageiro com locomoção deteriorada.</li></ul>|
 |Hobbies:|<ul><li>Trabalho voluntário</li><li>Jardinagem</li></ul>|
 
-|Pedro Pascoal||
+|Pedro Pascoal|<img src="img/PedroPascoal.jpg" width="100">|
 |---|---| 
 |Idade: 34 anos|Ocupação: Arquiteto|
 |Tipo de Veículo: SUV adaptada||
@@ -53,7 +53,7 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 |Motivações: | <ul><li> Frequentar estabelecimentos com poucas escadas ou rampas.</li><li> Estacionar em locais com vagas preferênciais.</li></ul>|
 |Hobbies:|<ul><li>Fotografia</li><li>Leitura</li></ul>|
 
-|Michael Oliveira||
+|Michael Oliveira|<img src="img/MachaelOleiveira.jpg" width="100">|
 |---|---| 
 |Idade: 31 anos|Ocupação: Engenheiro Civil|
 |Tipo de Veículo: Sedan||

@@ -48,6 +48,18 @@ Apresente a divisão de papéis entre os membros do grupo.
 
 ### Processo
 
+#### Sprint
+
+As Sprints estão no próprio repositório do Github no endereço:
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t2-estacionario/milestones
+
+#### Backlog
+
+O Backlog está no próprio repositório do Github no endereço:
+
+https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/98/views/1
+
 Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
  
 > **Links Úteis**:

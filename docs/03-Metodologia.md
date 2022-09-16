@@ -1,9 +1,7 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
 ## Controle de Versão
 
@@ -39,12 +37,23 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+A equipe está organizada da seguinte maneira:
+*	Scrum Master: Fernando Maia Torres Alves
+*	Product Owner: Vinicius Souza
+* Equipe de Desenvolvimento
+  * Cristian Balbi de Faria Junior
+  * Felipe Ferreira Moraes de Paula
+  * Fernando Maia Torres Alves
+  * Jhody Mike Possidonio Da Silva
+  * Marcos Guimarães Costa Rocha
+  * Vinicius Souza
+* Equipe de Desenvolvimento
+  * Cristian Balbi de Faria Junior
+  * Fernando Maia Torres Alves
+  * Marcos Guimarães Costa Rocha
+  * Vinicius Souza
 
 ### Processo
 
@@ -73,8 +82,13 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
 As ferramentas empregadas no projeto são:
 
 - Editor de código.
+  * Github
+  * Visual Studio Code
 - Ferramentas de comunicação
+  * Microsoft Teams
+  * WhatsApp
 - Ferramentas de desenho de tela (_wireframing_)
+  * Marvel
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem

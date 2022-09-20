@@ -15,7 +15,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Fernando Maia Torres Alves
 * Jhody Mike Possidonio Da Silva
 * Marcos Guimarães Costa Rocha
-* Vinicius Souza
+* Vinicius de Souza Ponciano
 
 ## Orientador
 

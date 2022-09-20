@@ -48,12 +48,12 @@ A equipe está organizada da seguinte maneira:
   * Fernando Maia Torres Alves
   * Jhody Mike Possidonio Da Silva
   * Marcos Guimarães Costa Rocha
-  * Vinicius Souza
+  * Vinicius de Souza Ponciano
 * Equipe de Desenvolvimento
   * Cristian Balbi de Faria Junior
   * Fernando Maia Torres Alves
   * Marcos Guimarães Costa Rocha
-  * Vinicius Souza
+  * Vinicius de Souza Ponciano
 
 ### Processo
 

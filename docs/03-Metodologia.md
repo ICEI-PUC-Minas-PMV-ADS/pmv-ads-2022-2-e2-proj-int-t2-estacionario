@@ -83,7 +83,7 @@ As ferramentas empregadas no projeto são:
 
 - Editor de código.
   * Github
-  * Visual Studio Code
+  * Visual Studio
 - Ferramentas de comunicação
   * Microsoft Teams
   * WhatsApp

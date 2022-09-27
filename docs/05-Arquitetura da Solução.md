@@ -36,6 +36,10 @@ Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, 
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
+## Diagrama de Fluxo de Usuários
+
+![fluxousuario](https://user-images.githubusercontent.com/86004024/192551290-f931e972-201d-4e8d-8843-aeef76c7b71a.jpeg)
+
 ## Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.

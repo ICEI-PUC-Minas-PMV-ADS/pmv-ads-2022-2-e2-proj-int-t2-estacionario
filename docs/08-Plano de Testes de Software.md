@@ -2,30 +2,45 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+CT-01 Encontrar um estacionamento por meio do campo de busca
+Requisitos associados: | RF-001 | A aplicação deve apresentar a funcionalidade de buscador  - RF-003 A aplicação deve apresentar as informações do estabelecimento e serviços extras oferecidos - RF-006 A aplicação deve possuir um filtro para refinar a busca do usuário | 
+Objetivos do teste: Validar se o campo de busca trás estabelecimentos de forma precisa.
+Passos:
+1. abrir o navegador;
+2. acessar o endereço: https://www.xxxx.xx.xx;
+3. Navegar até o campo de busca e inserir um nome de estacionamento;
+4. pressionar o botão buscar.
+Critério de êxito: Após pressionar o botão buscar a aplicação deve exibir estacionamentos relacionnados ao termo buscado no input.
 
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
+CT-02 Usuário faz busca de estacionamento por meio dos filtros
+Requisitos associados: RF-002 A aplicação deve apresentar categorias de vagas para facilitar a busca dos usuários - RF-006 A aplicação deve possuir um filtro para refinar a busca do usuário - 
+Objetivos do teste: validar se os filtros estejam direcionando para os resultados selecionados
+Passos:
+1. abrir o navegador;
+2. acessar o endereço: https://www.xxxx.xx.xx;
+3. navegar até a sessão dos filtros de estacionamentos;
+4. selecionar o tipo de vaga, estado, cidade e bairro.
+Critério de êxito: após selecionar todos os filtros deverá aparecer estacionamentos com as características filtradas.
 
-Por exemplo:
- 
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
-|  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+CT-03 Usuário comum realiza cadastro
+Requisitos associados: RF-009 A aplicação deve possuir uma área para cadastrar novos usuários e empresas
+Objetivos do teste: validar se à aplicação está permitindo a criação de novos usuários com os dados obrigatórios solicitados.
+Passos:
+1. abrir o navegador;
+2. acessar o endereço: https://www.xxxx.xx.xx;
+3. Navegar até o link "Cadastrar" e pressioná-lo.
+4. Escolher a opção usuário comum;
+5. preencher todos os campos obrigatórios solicitado;
+6. pressionar o botão cadastrar.
+Critério de êxito: Após o correto preenchimento do formulário e pressionar o botão cadastrar, o usuário deve conseguir fazer login com as credenciais cadastradas e ter acesso as funcionalidades da aplicação que exige login.
 
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+CT-04 Usuário comum faz login
+Requisitos associados: RF-007 A aplicação deve possuir uma área de login para que o usuário possa fazer reservas de vagas - RF-013 A aplicação deve ter dentro da área de login de usuários uma sessão de locais favoritados
+Objetivos do teste: validar à área de login e se um usuário previamente cadastrado consegue logar-se.
+Passos:
+1. abrir o navegador;
+2. acessar o endereço: https://www.xxxx.xx.xx;
+3. Navegar até o link "login" e pressioná-lo.
+4. inserir e-mail e senha válida;
+5. pressionar o botão "acessar".
+Critério de êxito: após o preenchimento correto do e-mail e senha válidos e pressionar o botão "acessar" o usuário deve ser direcionado para sua área logada.

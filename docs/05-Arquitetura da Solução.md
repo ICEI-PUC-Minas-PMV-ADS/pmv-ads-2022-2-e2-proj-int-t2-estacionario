@@ -30,7 +30,8 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Diagrama de Fluxo de Usuários
 
-![fluxousuario](https://user-images.githubusercontent.com/86004024/192551290-f931e972-201d-4e8d-8843-aeef76c7b71a.jpeg)
+![diagrama_flluxos_usuarios](https://user-images.githubusercontent.com/86004024/193414659-504cb3bf-0010-4802-9aa5-85a6f784a558.png)
+
 
 ## Hospedagem
 

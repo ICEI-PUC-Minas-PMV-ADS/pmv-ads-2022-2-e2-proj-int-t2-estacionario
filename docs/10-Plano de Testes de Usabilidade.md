@@ -1,8 +1,8 @@
 ## 1 Objetivos 
-• Detectar problemas no fluxo das tarefas da aplicação;
-• Observar o tempo gasto dos participantes para realização de cada tarefa;
-• Verificar a compreensão dos participantes na execução das solicitações da aplicação em cada tarefa;
-• Avaliar a satisfação dos participantes sobre a aplicação;
+* Detectar problemas no fluxo das tarefas da aplicação;
+* Observar o tempo gasto dos participantes para realização de cada tarefa;
+* Verificar a compreensão dos participantes na execução das solicitações da aplicação em cada tarefa;
+* Avaliar a satisfação dos participantes sobre a aplicação;
 
 ## 2 Participantes 
 
@@ -10,13 +10,13 @@
 
 Participantes convidados
 
-| PARTICIPANTE | NOME | CONDIÇÃO |
-| : --------: | ---- | -------- |
-| 1 | Julho | Idoso |
-| 2 | Ana | Gestante |
-| 3 | Beto | Cadeirante |
-| 4 | Marcela | Proprietária de carro elétrico |
-| 5 | Jéssica | Motorista |
+| Participantes | Nome | Condição |
+| :------------: | ------------------------------------------------------------------------------- | ------ |
+| 1 | Julho Almeida | Idoso |
+| 2 | Ana Clara Ribeiro | Gestante |
+| 3 | Beto Madeira | Cadeirante |
+| 4 | Marcela Caldeira | Proprietária de carro elétrico |
+| 5 | Jéssica da Silva | Motorista |
 
 Participantes confirmados
 

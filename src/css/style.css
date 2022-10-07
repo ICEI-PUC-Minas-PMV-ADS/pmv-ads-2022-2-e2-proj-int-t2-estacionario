@@ -47,7 +47,7 @@ div img {
     vertical-align: middle;
 }
 
-main {
+principal {
     display: inline-flex;
     color: white;
     width: 100%;
@@ -56,7 +56,7 @@ main {
     background-color:rgb(216, 216, 216)
 }
 
-main a {
+principal a {
     margin: auto;
 }
 

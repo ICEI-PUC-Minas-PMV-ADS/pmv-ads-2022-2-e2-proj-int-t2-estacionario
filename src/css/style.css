@@ -1,24 +1,54 @@
-/* Esta parte do CSS é o cabeçalho*/
-
-ul.nav{
+header >div{
   background-color: green;
+  display: inline-flex;
+  width: 100%
+}
+header >div >div{
+  display: flex;
+}
 
+div.div-left{
+  width: 20%
+}
+div.div-middle{
+  width: 60%;
+  flex-direction: column;
+}
+
+div.div-middle >a{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  align-self: center;
+  font-size: 32px;
+}
+
+div.div-right{
+  width: 20%;
+  flex-direction: column
+}
+
+div.div-right > button{
+  width: 50%;
 }
 
 ul.nav >li{
   display: inline-flex;
-  background-color: black;
 }
 
-/* Esta parte do CSS é o cabeçalho para dividir a lista horizontal*/
-u2.nav> li{
+ul.nav2{
+  display: flex;
+  align-self: center;
+  align-items: end;
+}
+
+ul.nav2> li{
   display: inline-flex;
   background-color: rgb(151, 208, 161);
   padding:10px 30px;
 
 }
 
-u3.nav> ol{
+ul.nav3> ol{
   display: inline-flex;
   background-color: blue;
   padding:0px 0px;

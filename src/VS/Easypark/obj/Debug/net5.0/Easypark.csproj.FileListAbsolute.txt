@@ -2181,3 +2181,10 @@ D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easy
 D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Easypark.pdb
 D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Easypark.genruntimeconfig.cache
 D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Clientes\Relatorio.cshtml.g.cs
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Usuarios\Create.cshtml.g.cs
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Usuarios\Delete.cshtml.g.cs
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Usuarios\Details.cshtml.g.cs
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Usuarios\Edit.cshtml.g.cs
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Usuarios\Index.cshtml.g.cs
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\bin\Debug\net5.0\BCrypt.Net-Next.dll
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Usuarios\Login.cshtml.g.cs

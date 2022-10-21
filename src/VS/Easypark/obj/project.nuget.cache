@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "k6PvHvWjeSjHrY1qeF/iyVf/5gWdA35XOQrdlnLhVyZ0ozZqkVixRa3Z2JSgwDion6GLCGxZPoDKq1TZqpEsaA==",
+  "dgSpecHash": "FVWx99ewzZPIqpANPos8/WSXx7gM/LBx9Rr3ivzIYfsReCnQkA1soQ1ry8Y0wWAbZAsgQvukfjI4DzmqZjMtPQ==",
   "success": true,
   "projectFilePath": "D:\\ferne\\Documents\\GitHub\\pmv-ads-2022-2-e2-proj-int-t2-estacionario\\src\\VS\\Easypark\\Easypark.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ferne\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\ferne\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ferne\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\ferne\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.17\\microsoft.aspnetcore.mvc.razor.extensions.5.0.17.nupkg.sha512",

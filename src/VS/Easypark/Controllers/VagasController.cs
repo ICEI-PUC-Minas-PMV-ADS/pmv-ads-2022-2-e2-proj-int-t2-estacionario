@@ -9,22 +9,23 @@ using Easypark.Models;
 
 namespace Easypark.Controllers
 {
-    public class ClientesController : Controller
+    public class VagasController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ClientesController(ApplicationDbContext context)
+        public VagasController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Clientes
+        // GET: Vagas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            var applicationDbContext = _context.Vagas.Include(v => v.Cliente);
+            return View(await applicationDbContext.ToListAsync());
         }
 
-        // GET: Clientes/Details/5
+        // GET: Vagas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,58 +33,42 @@ namespace Easypark.Controllers
                 return NotFound();
             }
 
-            var cliente = await _context.Clientes
-                .FirstOrDefaultAsync(m => m.cliente_id == id);
-            if (cliente == null)
+            var vaga = await _context.Vagas
+                .Include(v => v.Cliente)
+                .FirstOrDefaultAsync(m => m.codVaga == id);
+            if (vaga == null)
             {
                 return NotFound();
             }
 
-            return View(cliente);
+            return View(vaga);
         }
 
-        // GET: Clientes/Details/5
-        public async Task<IActionResult> Relatorio(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var cliente = await _context.Clientes
-                .Include(t => t.Vagas)
-                .FirstOrDefaultAsync(m => m.cliente_id == id);
-            if (cliente == null)
-            {
-                return NotFound();
-            }
-
-            return View(cliente);
-        }
-
-        // GET: Clientes/Create
+        // GET: Vagas/Create
         public IActionResult Create()
         {
+            ViewData["cliente_id"] = new SelectList(_context.Clientes, "cliente_id", "nome");
             return View();
         }
 
-        // POST: Clientes/Create
+        // POST: Vagas/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("cliente_id,nome,tipoCarro,modeloCarro,placaCarro,CNPJ,CPF")] Cliente cliente)
+        public async Task<IActionResult> Create([Bind("codVaga,tipoVaga,preenchido,cliente_id")] Vaga vaga)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(cliente);
+                _context.Add(vaga);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(cliente);
+            ViewData["cliente_id"] = new SelectList(_context.Clientes, "cliente_id", "nome", vaga.cliente_id);
+            return View(vaga);
         }
 
-        // GET: Clientes/Edit/5
+        // GET: Vagas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -91,22 +76,23 @@ namespace Easypark.Controllers
                 return NotFound();
             }
 
-            var cliente = await _context.Clientes.FindAsync(id);
-            if (cliente == null)
+            var vaga = await _context.Vagas.FindAsync(id);
+            if (vaga == null)
             {
                 return NotFound();
             }
-            return View(cliente);
+            ViewData["cliente_id"] = new SelectList(_context.Clientes, "cliente_id", "nome", vaga.cliente_id);
+            return View(vaga);
         }
 
-        // POST: Clientes/Edit/5
+        // POST: Vagas/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("cliente_id,nome,tipoCarro,modeloCarro,placaCarro,CNPJ,CPF")] Cliente cliente)
+        public async Task<IActionResult> Edit(int id, [Bind("codVaga,tipoVaga,preenchido,cliente_id")] Vaga vaga)
         {
-            if (id != cliente.cliente_id)
+            if (id != vaga.codVaga)
             {
                 return NotFound();
             }
@@ -115,12 +101,12 @@ namespace Easypark.Controllers
             {
                 try
                 {
-                    _context.Update(cliente);
+                    _context.Update(vaga);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClienteExists(cliente.cliente_id))
+                    if (!VagaExists(vaga.codVaga))
                     {
                         return NotFound();
                     }
@@ -131,10 +117,11 @@ namespace Easypark.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(cliente);
+            ViewData["cliente_id"] = new SelectList(_context.Clientes, "cliente_id", "nome", vaga.cliente_id);
+            return View(vaga);
         }
 
-        // GET: Clientes/Delete/5
+        // GET: Vagas/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -142,30 +129,31 @@ namespace Easypark.Controllers
                 return NotFound();
             }
 
-            var cliente = await _context.Clientes
-                .FirstOrDefaultAsync(m => m.cliente_id == id);
-            if (cliente == null)
+            var vaga = await _context.Vagas
+                .Include(v => v.Cliente)
+                .FirstOrDefaultAsync(m => m.codVaga == id);
+            if (vaga == null)
             {
                 return NotFound();
             }
 
-            return View(cliente);
+            return View(vaga);
         }
 
-        // POST: Clientes/Delete/5
+        // POST: Vagas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var cliente = await _context.Clientes.FindAsync(id);
-            _context.Clientes.Remove(cliente);
+            var vaga = await _context.Vagas.FindAsync(id);
+            _context.Vagas.Remove(vaga);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ClienteExists(int id)
+        private bool VagaExists(int id)
         {
-            return _context.Clientes.Any(e => e.cliente_id == id);
+            return _context.Vagas.Any(e => e.codVaga == id);
         }
     }
 }

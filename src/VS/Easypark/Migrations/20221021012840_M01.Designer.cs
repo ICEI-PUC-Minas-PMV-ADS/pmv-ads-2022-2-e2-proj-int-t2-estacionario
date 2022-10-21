@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Easypark.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221020133603_M01")]
+    [Migration("20221021012840_M01")]
     partial class M01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -79,13 +79,18 @@ namespace Easypark.Migrations
 
             modelBuilder.Entity("Easypark.Models.Vaga", b =>
                 {
-                    b.HasOne("Easypark.Models.Cliente", "cliente")
-                        .WithMany()
+                    b.HasOne("Easypark.Models.Cliente", "Cliente")
+                        .WithMany("Vagas")
                         .HasForeignKey("cliente_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("cliente");
+                    b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("Easypark.Models.Cliente", b =>
+                {
+                    b.Navigation("Vagas");
                 });
 #pragma warning restore 612, 618
         }

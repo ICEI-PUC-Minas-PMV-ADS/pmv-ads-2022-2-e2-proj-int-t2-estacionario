@@ -77,13 +77,18 @@ namespace Easypark.Migrations
 
             modelBuilder.Entity("Easypark.Models.Vaga", b =>
                 {
-                    b.HasOne("Easypark.Models.Cliente", "cliente")
-                        .WithMany()
+                    b.HasOne("Easypark.Models.Cliente", "Cliente")
+                        .WithMany("Vagas")
                         .HasForeignKey("cliente_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("cliente");
+                    b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("Easypark.Models.Cliente", b =>
+                {
+                    b.Navigation("Vagas");
                 });
 #pragma warning restore 612, 618
         }

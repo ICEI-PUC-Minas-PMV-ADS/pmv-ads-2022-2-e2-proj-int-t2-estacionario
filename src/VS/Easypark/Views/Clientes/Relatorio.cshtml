@@ -1,0 +1,54 @@
+﻿@model Easypark.Models.Cliente
+
+@{
+    ViewData["Title"] = "Relatorio";
+}
+
+<h2>Cliente: @Model.nome</h2>
+
+<div>
+    <h4>Dados</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tipoCarro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tipoCarro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.modeloCarro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.modeloCarro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.placaCarro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.placaCarro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CNPJ)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CNPJ)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CPF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CPF)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.cliente_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

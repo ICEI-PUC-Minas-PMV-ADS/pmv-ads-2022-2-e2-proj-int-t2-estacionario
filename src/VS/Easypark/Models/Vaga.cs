@@ -20,7 +20,7 @@ namespace Easypark.Models
         [Display(Name = "Cliente Número")]
         public int cliente_id { get; set; }
         [ForeignKey("cliente_id")]
-        public Cliente cliente { get; set; }
+        public Cliente Cliente { get; set; }
     }
 
     public enum ocupacao

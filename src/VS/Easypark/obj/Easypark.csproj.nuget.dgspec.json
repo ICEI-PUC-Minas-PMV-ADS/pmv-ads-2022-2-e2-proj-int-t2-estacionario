@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Desenvolvimento Web Back-end\\Projeto Easypark\\Easypark\\Easypark.csproj": {}
+    "D:\\ferne\\Documents\\GitHub\\pmv-ads-2022-2-e2-proj-int-t2-estacionario\\src\\VS\\Easypark\\Easypark.csproj": {}
   },
   "projects": {
-    "F:\\Desenvolvimento Web Back-end\\Projeto Easypark\\Easypark\\Easypark.csproj": {
+    "D:\\ferne\\Documents\\GitHub\\pmv-ads-2022-2-e2-proj-int-t2-estacionario\\src\\VS\\Easypark\\Easypark.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Desenvolvimento Web Back-end\\Projeto Easypark\\Easypark\\Easypark.csproj",
+        "projectUniqueName": "D:\\ferne\\Documents\\GitHub\\pmv-ads-2022-2-e2-proj-int-t2-estacionario\\src\\VS\\Easypark\\Easypark.csproj",
         "projectName": "Easypark",
-        "projectPath": "F:\\Desenvolvimento Web Back-end\\Projeto Easypark\\Easypark\\Easypark.csproj",
+        "projectPath": "D:\\ferne\\Documents\\GitHub\\pmv-ads-2022-2-e2-proj-int-t2-estacionario\\src\\VS\\Easypark\\Easypark.csproj",
         "packagesPath": "C:\\Users\\ferne\\.nuget\\packages\\",
-        "outputPath": "F:\\Desenvolvimento Web Back-end\\Projeto Easypark\\Easypark\\obj\\",
+        "outputPath": "D:\\ferne\\Documents\\GitHub\\pmv-ads-2022-2-e2-proj-int-t2-estacionario\\src\\VS\\Easypark\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ferne\\AppData\\Roaming\\NuGet\\NuGet.Config",

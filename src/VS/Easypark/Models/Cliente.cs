@@ -32,5 +32,7 @@ namespace Easypark.Models
         public int CNPJ { get; set; }
         //[ForeignKey]
         public int CPF { get; set; }
+
+        public ICollection<Vaga> Vagas { get; set; }
     }
 }

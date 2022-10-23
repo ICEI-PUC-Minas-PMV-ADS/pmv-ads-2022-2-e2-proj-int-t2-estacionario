@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Easypark.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Easypark.Controllers
 {
+    [Authorize]
     public class UsuariosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,12 +22,14 @@ namespace Easypark.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login([Bind("Nome,Senha")] Usuario usuario)
         {
             var user = await _context.Usuarios
@@ -74,6 +78,8 @@ namespace Easypark.Controllers
             await HttpContext.SignOutAsync();
             return RedirectToAction("Login", "Usuarios");
         }
+
+        [AllowAnonymous]
         public IActionResult AcessDenied()
         {
             return View();

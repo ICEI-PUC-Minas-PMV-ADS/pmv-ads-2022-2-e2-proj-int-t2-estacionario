@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Easypark.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Easypark.Controllers
 {
+    [Authorize]
     public class VagasController : Controller
     {
         private readonly ApplicationDbContext _context;

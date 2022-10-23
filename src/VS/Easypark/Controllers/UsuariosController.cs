@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Easypark.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Easypark.Controllers
 {
@@ -24,10 +26,10 @@ namespace Easypark.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login([Bind("Id,Senha")] Usuario usuario)
+        public async Task<IActionResult> Login([Bind("Nome,Senha")] Usuario usuario)
         {
             var user = await _context.Usuarios
-                .FirstOrDefaultAsync(m => m.Id == usuario.Id);
+                .FirstOrDefaultAsync(m => m.Nome == usuario.Nome);
 
             if (user == null)
             {
@@ -39,12 +41,42 @@ namespace Easypark.Controllers
             
             if (isSenhaOk)
             {
-                ViewBag.Mensage = "Usuário Ok!";
-                return View();
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, user.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, user.Nome),
+                    new Claim(ClaimTypes.Role, user.Perfil.ToString())
+                };
+
+                var userIdentity = new ClaimsIdentity(claims, "login");
+
+                ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(7),
+                    IsPersistent = true
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                return Redirect("/");
+
             }
 
             ViewBag.Mensage = "Usuário e/ou Senha inválidos!";
             return View();            
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "Usuarios");
+        }
+        public IActionResult AcessDenied()
+        {
+            return View();
         }
 
         // GET: Usuarios

@@ -2189,3 +2189,6 @@ D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easy
 D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\bin\Debug\net5.0\BCrypt.Net-Next.dll
 D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Usuarios\Login.cshtml.g.cs
 D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Usuarios\AcessDenied.cshtml.g.cs
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Home\FaleConosco.cshtml.g.cs
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Home\SobreNos.cshtml.g.cs
+D:\ferne\Documents\GitHub\pmv-ads-2022-2-e2-proj-int-t2-estacionario\src\VS\Easypark\obj\Debug\net5.0\Razor\Views\Home\TermoDeUso.cshtml.g.cs

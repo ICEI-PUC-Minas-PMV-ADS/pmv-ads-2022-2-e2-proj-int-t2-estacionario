@@ -2,7 +2,7 @@
 
 namespace Easypark.Migrations
 {
-    public partial class M01 : Migration
+    public partial class VagasMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -41,7 +41,7 @@ namespace Easypark.Migrations
                     codVaga = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     tipoVaga = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    preenchido = table.Column<int>(type: "int", nullable: false),
+                    preenchido = table.Column<bool>(type: "bool", nullable: false),
                     cliente_id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

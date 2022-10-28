@@ -2,7 +2,7 @@
 
 namespace Easypark.Migrations
 {
-    public partial class M00 : Migration
+    public partial class ClientesMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

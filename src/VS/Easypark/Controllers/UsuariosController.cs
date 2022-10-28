@@ -23,9 +23,10 @@ namespace Easypark.Controllers
         }
 
         [AllowAnonymous]
+        [Route("Usuarios/Login")]
         public IActionResult Login()
         {
-            return View();
+            return View(viewName: "Login");
         }
 
         [HttpPost]
@@ -110,9 +111,11 @@ namespace Easypark.Controllers
         }
 
         // GET: Usuarios/Create
+        [AllowAnonymous]
+        [Route("Usuarios/Create")]
         public IActionResult Create()
         {
-            return View();
+            return View(viewName: "Create");
         }
 
         // POST: Usuarios/Create

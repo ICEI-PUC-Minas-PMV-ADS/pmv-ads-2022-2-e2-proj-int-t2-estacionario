@@ -15,7 +15,7 @@ namespace Easypark.Models
 
         [Required(ErrorMessage = "Obrigatório informar se a vaga está ocupada!")]
         [Display(Name = "Vaga Ocupada?")]
-        public ocupacao preenchido { get; set; }
+        public bool preenchido { get; set; }
 
         [Display(Name = "Cliente Número")]
         public int cliente_id { get; set; }
@@ -23,9 +23,4 @@ namespace Easypark.Models
         public Cliente Cliente { get; set; }
     }
 
-    public enum ocupacao
-    { 
-        Sim,
-        Não
-    }
 }

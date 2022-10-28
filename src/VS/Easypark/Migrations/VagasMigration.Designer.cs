@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Easypark.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221018112413_M00")]
-    partial class M00
+    [Migration("VagasMigration")]
+    partial class VagasMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,13 +34,14 @@ namespace Easypark.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("modeloCarro")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nome")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("placaCarro")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("tipoCarro")
@@ -50,6 +51,46 @@ namespace Easypark.Migrations
                     b.HasKey("cliente_id");
 
                     b.ToTable("Clientes");
+                });
+
+            modelBuilder.Entity("Easypark.Models.Vaga", b =>
+                {
+                    b.Property<int>("codVaga")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("cliente_id")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("preenchido")
+                        .HasColumnType("bool");
+
+                    b.Property<string>("tipoVaga")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("codVaga");
+
+                    b.HasIndex("cliente_id");
+
+                    b.ToTable("Vagas");
+                });
+
+            modelBuilder.Entity("Easypark.Models.Vaga", b =>
+                {
+                    b.HasOne("Easypark.Models.Cliente", "Cliente")
+                        .WithMany("Vagas")
+                        .HasForeignKey("cliente_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("Easypark.Models.Cliente", b =>
+                {
+                    b.Navigation("Vagas");
                 });
 #pragma warning restore 612, 618
         }

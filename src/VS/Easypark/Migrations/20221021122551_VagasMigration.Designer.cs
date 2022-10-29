@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Easypark.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("VagasMigration")]
+    [Migration("20221021122551_VagasMigration")]
     partial class VagasMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

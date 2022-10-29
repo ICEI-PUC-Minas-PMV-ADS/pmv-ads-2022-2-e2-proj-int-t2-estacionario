@@ -1,13 +1,14 @@
 using System;
-
+using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 namespace Easypark.Models
 {
     public class Estacionamento
     {
-        [key]
+        [Key]
         public int codigoEstacionamento { get; set; }
 
-        [ForeignKey]
+        //[ForeignKey]
         public int clienteId { get; set; }
 
         public string nomeEstacionamento { get; set; }
@@ -20,12 +21,6 @@ namespace Easypark.Models
         public VagaModel vagaCarroEletrico { get; set; }
         public VagaModel vagaIdoso { get; set; }
         public VagaModel vagaRegular { get; set; }
-
-        public class VagaModel{
-
-            public int vagasTotal;
-            public int vagasLivre;
-        }
 
         public void CadastrarLavaJato()
         {

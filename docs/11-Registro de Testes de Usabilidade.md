@@ -69,4 +69,60 @@ As respostas dos participantes estão numeradas de acordo com a tabela acima. Os
 04. Não
 05. 
 
+## Respostas Atividade 2 - Log in do usuário
 
+### Você poderia falar mais sobre a ação?
+01. Cliquei no botão de log in e entrou em uma página para eu colocar o usuário e senha
+02. O botão de log in me enviou para uma página para fazer a minha autenticação no site
+03. 
+04. 
+05. 
+
+### O que você esperava como resultado quando executou?
+01. Logar na página
+02. Entrar com o meu usuário na página
+03. 
+04. 
+05. 
+
+### O que você estava pensando quando executou ação?
+01. Nada
+02. De verificar o que tem na página para o usuário logado
+03. 
+04. 
+05. 
+
+### O que isso significa para você?
+01. Nada
+02. Que eu poderia verificar o que o site tem a oferecer
+03. 
+04. 
+05. 
+
+### O que você faria em seguida?
+01. Ver o que o site tem para os usuários
+02. Navegar no site para ver o que posso fazer com no site
+03. 
+04. 
+05. 
+
+### O que você vê nesta página de Log In?
+01. Vejo que há um campo onde eu posso colocar o meu usuário e a senha
+02. Uma página normal de log in, com o usuário e senha
+03. 
+04. 
+05. 
+
+### O que deveria acontecer em seguida?
+01. Entrar na página com o meu usuário
+02. Mostrar as opções que a página tem para um usuário logado
+03. 
+04. 
+05. 
+
+### Você localiza algo na tela que poderia ajudá-lo(a)?
+01. Não
+02. Não
+03. 
+04. 
+05. 

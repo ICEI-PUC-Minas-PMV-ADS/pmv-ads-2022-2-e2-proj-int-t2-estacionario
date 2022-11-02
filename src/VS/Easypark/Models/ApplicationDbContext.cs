@@ -16,6 +16,7 @@ namespace Easypark.Models
         public DbSet<Vaga> Vagas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Estacionamento> Estacionamentos { get; set; }
+        public DbSet<Empresa> Empresas { get; set; }
 
     }
 }

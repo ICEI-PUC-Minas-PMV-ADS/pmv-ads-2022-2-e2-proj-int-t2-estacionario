@@ -23,10 +23,11 @@ namespace Easypark.Controllers
         }
 
         [AllowAnonymous]
-        [Route("Usuarios/Login")]
+        // [Route("Usuarios/Login")]
         public IActionResult Login()
         {
-            return View(viewName: "Login");
+            return View();
+            //return View(viewName: "Login");
         }
 
         [HttpPost]
@@ -74,6 +75,7 @@ namespace Easypark.Controllers
             return View();            
         }
 
+        [AllowAnonymous] // adicionado
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
@@ -112,10 +114,11 @@ namespace Easypark.Controllers
 
         // GET: Usuarios/Create
         [AllowAnonymous]
-        [Route("Usuarios/Create")]
+        //[Route("Usuarios/Create")]
         public IActionResult Create()
         {
-            return View(viewName: "Create");
+            return View();
+            //  return View(viewName: "Create");
         }
 
         // POST: Usuarios/Create

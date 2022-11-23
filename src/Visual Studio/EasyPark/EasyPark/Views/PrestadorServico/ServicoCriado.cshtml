@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Serviço criado";
+    Layout = "~/Views/Shared/_LayoutPrestadorServico.cshtml";
+}
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Serviço criado com sucesso!</h2>
+        <p class="text-justify">O serviço @ViewBag.NomeServicoCriado, foi criado com sucesso.<br />O que deseja fazer?</p>
+        <br />
+        <a asp-action="PrestadorServico" class="btn btn-primary" role="button">Criar mais serviços</a>
+        <br />
+        <a asp-action="GerenciarServico" class="btn btn-primary" role="button">Gerenciar serviços cadastrados</a>
+    </div>
+
+</div>

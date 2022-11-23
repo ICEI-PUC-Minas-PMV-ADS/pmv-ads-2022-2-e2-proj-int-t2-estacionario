@@ -1,0 +1,64 @@
+﻿@model EasyPark.EasyPark.Domain.Requests.BuscaRequest;
+@{
+    ViewData["Title"] = "Filtro geral";
+    Layout = "~/Views/Shared/_LayoutCliente.cshtml";
+}
+
+<div class="row">
+    <div class="col-md12">
+        <h2>Filtro de busca geral</h2>
+        <p class="text-justify">Realize a busca no sistema utilizando os parâmetros do filtro abaixo.</p>
+        <br />
+
+    </div>
+</div>
+
+<form asp-action="AplicaFiltro" method="post" onsubmit="return;true">
+    <div class="row">
+        <div class="col-md-6">
+<label for="Estado" id=""LblEstado" class="control-label">Selecione o estado da busca</label>
+            <select id="Estado" class="dropdown" asp-for="@Model.Estado">
+                @foreach (var est in Model.estados)
+            {
+                    <option value=@est.EstadoId>@est.NomeEstado</option>
+            }
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="Busca" class="control-label" id="LblBusca">Termo a ser pesquisado</label>
+            <input type="search" id="Busca" class="form-control" placeholder="Busque por serviços, estacionamentos endereço em geral..." asp-for="@Model.CampoBusca" />
+        </div>
+    </div>
+    <div class="row">
+        <fieldset>
+            <legend class="text-info">Parâmetros do filtro</legend>
+
+        
+        <div class="col-md-3">
+            <label for="Guincho" class="form-check-label">Guincho</label>
+            <input type="checkbox" id="Guincho" class="form-check-input" asp-for="@Model.Guincho" />
+        </div>
+        <div class="col-md-3">
+            <label for="Chaveiro" class="form-check-label">Chaveiro</label>
+            <input type="checkbox" id="Chaveiro" class="form-check-input" asp-for="@Model.Chaveiro" />
+            </div>
+        <div class="col-md-3">
+            <label for="Lava" class="form-check-label">Lava rápido</label>
+            <input type="checkbox" id="Lava" class="form-check-input" asp-for="@Model.LavaRapido" />
+            
+        </div>
+        <div class="col-md-3">
+            <label for="Estacionamento" class="form-check-label">Estacionamento</label>
+            <input type="checkbox" id="Estacionamento" class="form-check-input" asp-for="@Model.Estacionamento" />
+
+        </div>
+            </fieldset>
+        </div>
+<div class="col-md-6">
+    <input type="reset" class="btn btn-danger" value="Limpar Filtro" />
+
+</div>    
+    <div class="col-md-6">
+        <input type="submit" class="btn btn-success" value="Aplicar Filtro" />
+    </div> 
+</form>

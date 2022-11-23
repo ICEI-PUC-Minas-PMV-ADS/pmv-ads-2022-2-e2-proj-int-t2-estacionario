@@ -1,0 +1,79 @@
+﻿@model EasyPark.EasyPark.Domain.Responses.EstacionamentoResponse;
+
+@{
+    ViewData["Title"] = "Atualizar Estacionamento";
+    Layout = "~/Views/Shared/_LayoutEmpresa.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Atualizar estacionamento @Model.NomeEstacionamento</h2>
+        <p class="text-justify">Atualize os dados abaixo e depois de tudo pronto, pressione o botão salvar para realizar as alterações.</p>
+        <br />
+    </div>
+</div>
+
+
+        <form asp-action="EfetivarAlteracaoEstacionamento" method="POST" onsubmit="return;true">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="NomeEstacionamento" id="LblNomeEstacionamento" class="control-label">Informe o nome do estacionamento</label>
+                    <input type="text" id="NomeEstacionamento" value="@Model.NomeEstacionamento" class="form-group" asp-for="@Model.NomeEstacionamento" />
+                </div>
+                <div class="col-md-6">
+                    <label for="TelefoneEstacionamento" id="LblTelefoneEstacionamento" class="control-label">Telefone de contato</label>
+                    <input type="tel" id="TelefoneEstacionamento" value="@Model.Telefone" class="form-group" asp-for="@Model.Telefone" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="HorarioFuncionamentoEstacionamento" id="LblHorarioFuncionamentoEstacionamento" class="control-label">Informe o horário de atendimento</label>
+                    <input type="text" id="HorarioFuncionamentoEstacionamento" value="@Model.HorarioFuncionamento" placeholder="Ex: das 9 as 16." class="form-group" asp-for="@Model.HorarioFuncionamento" />
+                </div>
+                <div class="col-md-6">
+                    <label for="EnderecoEstacionamento" id="LblEnderecoEstacionamento" class="control-label">Informe o endereço completo</label>
+                    <input type="text" id="EnderecoEstacionamento" value="@Model.Endereco" class="form-group" placeholder="Ex: AV das paumeiras 110 barrinhos - Santa Rita." asp-for="@Model.Endereco" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="EstadoEstacionamento" id="LblEstadoEstacionamento" class="control-label">Selecione o estado</label>
+                    <select id="EstadoEstacionamento" class="dropdown" asp-for="@Model.EstadoAtuacao">
+                        @foreach (var estado in Model.estados)
+                        {
+                            <option value=@estado.EstadoId>@estado.NomeEstado</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="QuantidadeTotalVagasEstacionamento" id="LblQuantidadeTotalVagaEstacionamento" class="control-label">Informe a quantidade máxima de vagas disponíveis</label>
+                    <input type="number" id="QuantidadeTotalVagasEstacionamento" value="@Model.TotaisVagas" class="form-group" asp-for="@Model.TotaisVagas" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="VagasEletricas" id="LblVagasEletricas" class="control-label">Informe a quantidade de vagas disponíveis para carros elétricos</label>
+                    <input type="number" id="VagasEletricas" value="@Model.VagasEletricas" class="form-group" asp-for="@Model.VagasEletricas" />
+                </div>
+                <div class="col-md-4">
+                    <label for="VagasPreferenciais" id="LblVagasPreferenciais" class="control-label">Informe a quantidade de vagas pereferenciais disponíveis</label>
+                    <input type="number" id="VagasPreferenciais" value="@Model.VagasPreferenciais" class="form-group" asp-for="@Model.VagasPreferenciais" />
+                </div>
+                <div class="col-md-4">
+                    <label for="VagasComuns" id="LblVagasComuns" class="control-label">Informe a quantidade para vagas comuns</label>
+                    <input type="number" id="VagasComuns" value="@Model.VagasComuns" class="form-group" asp-for="@Model.VagasComuns" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="reset" class="btn btn-danger" value="Limpar dados inseridos" />
+
+                </div>
+                <div class="col-md-6">
+                    <input type="submit" class="btn btn-success" value="Salvar alterações" />
+                    <input type="hidden" value="@ViewBag.UsuarioIdLogadoEmpresa" asp-for="@Model.UsuarioEmpresaCriador" />
+                    <input type="hidden" value="@Model.EstacionamentoId" asp-for="@Model.EstacionamentoId" />
+                </div>
+            </div>
+
+</form>

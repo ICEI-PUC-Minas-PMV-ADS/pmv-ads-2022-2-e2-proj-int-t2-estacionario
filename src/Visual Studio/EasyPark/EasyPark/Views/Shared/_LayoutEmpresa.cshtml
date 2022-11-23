@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EasyPark</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="/js/ControlesExibicao/HabilitaTelas.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md4">
+                    <a href="#MarcoMenu" class="btn btn-secondary" role="button">Ir para o Menu</a>
+                </div>
+                <div class="col-md4">
+                    <a href="#MarcoMain" class="btn btn-secondary" role="button">Ir para o conteúdo</a>
+                </div>
+                <div class="col-md4">
+                    <a href="#MarcoFooter" class="btn btn-secondary" role="button">Ir para o rodapé</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <img width="100" height="100" src="~/Imagens/logo.png" alt="Logo Easypark">
+                    <div class="col-md-12">
+                        <h1 style="text-align:center">Easypark</h1>
+                        <h3 style="text-align:center">A sua melhor opção</h3>
+                    </div>
+                    <p class="text-justify">Olá @ViewData["NomeUsuarioLogadoEmpresa"], você está logado (A). Seu perfil atual é como Empresa.</p>
+                </div>
+                <div class="col-md-4">
+                    <a asp-controller="Usuarios" asp-action="Sair" role="button" class="btn btn-primary">Sair do sistema</a>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md4">
+                    <span id="MarcoMenu"></span>
+                    <span id="MenuPrincipal" style="display:none">
+                        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                            <link class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Início</a>
+                            <link class="nav-item" />
+                            <a class="nav-link text-dark" asp-controller="Usuarios" asp-action="NovoUsuario">Criar conta no sistema</a>
+                            <link class="nav-item" />
+                            <a class="nav-link text-dark" asp-controller="Usuarios" asp-action="Login">Login</a>
+                        </nav>
+                    </span>
+                    <button type="button" class="btn btn-default" id="btnMenu" aria-expanded="false" onclick="HabilitarMenu();">Menu<span class="glyphicon-plus" id="icosExpand" aria-hidden="true"></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <span id="MarcoMenu"></span>
+    <div class="container">
+        <span id="MarcoMain"></span>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <span id="MarcoFotter"></span>
+    <footer class="border-top footer text-muted" aria-label="footer">
+        <div class="container">
+            <a asp-area="" asp-controller="Home" asp-action="FaleConosco">Fale Conosco</a> -
+            <a asp-area="" asp-controller="Home" asp-action="SobreNos">Sobre Nós</a> -
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Politica de Privacidade</a> -
+            <a asp-area="" asp-controller="Home" asp-action="TermoDeUso">Termo de Uso</a>
+            <br />
+            <a>&copy; @DateTime.Now.Year - Easypark todos os direitos reservados - Av. Paraná 108, Morumbi São Paulo - Tel: (11) 5599-9999</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

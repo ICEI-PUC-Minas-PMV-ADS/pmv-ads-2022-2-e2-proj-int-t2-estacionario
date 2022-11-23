@@ -1,0 +1,45 @@
+﻿@model List<EasyPark.EasyPark.Domain.Responses.EstacionamentoResponse>;
+@{
+    ViewData["Title"] = "Estacionamentos cadastrados";
+    Layout = "~/Views/Shared/_LayoutEmpresa.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Gerenciar estacionamentos cadastrados</h2>
+        @if (Model.Count() == 0)
+        {
+            <p class="text-justify">Ainda não há estacionamentos cadastrados</p>
+            <br />
+            <a asp-action="CadastrarEstacionamento" class="btn btn-primary" role="button">Cadastrar estacionamento</a>
+        }
+
+        @if (Model.Count() > 0)
+        {
+
+
+            <p class="text-justify">
+                Gerencie os estacionamentos que estão sobre sua gestão.
+                <br />Há @Model.Count() estacionamentos atrelados ao seu perfil.
+            </p>
+            <br />
+            @foreach (var estacionamento in Model)
+            {
+                <br />
+                <h2>@estacionamento.NomeEstacionamento</h2>
+                <p class="text-justify">Endereço: @estacionamento.Endereco - @estacionamento.NomeEstado.</p>
+                <p class="text-justify">Horário de funcionamento: @estacionamento.HorarioFuncionamento.</p>
+                <p class="text-justify">Telefone: @estacionamento.Telefone.</p>
+                <p class="text-justify">Capacidade máxima de vagas: @estacionamento.TotaisVagas.</p>
+                <p class="text-justify">Quantidade de vagas para carros elétricos: @estacionamento.VagasEletricas.</p>
+                <p class="text-justify">Quantidade de vagas preferenciais: @estacionamento.VagasPreferenciais.</p>
+                <p class="text-justify">Quantidade de vagas comuns: @estacionamento.VagasComuns.</p>
+                <br />
+                <a asp-action="RemoverEstacionamento" asp-route-id="@estacionamento.EstacionamentoId" class="btn btn-secondary" role="button" title="@estacionamento.NomeEstacionamento">Remover estacionamento</a>
+                <br />
+                <a asp-action="AtualizarEstacionamento" asp-route-id="@estacionamento.EstacionamentoId" class="btn btn-secondary" role="button" title="@estacionamento.NomeEstacionamento">Atualizar estacionamento</a>
+            }
+
+        }
+    </div>
+    </div>

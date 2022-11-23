@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Confirmação da sua solicitação";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        @if (ViewBag.ContaExiste)
+        {
+            <h2 style="color:red">Erro ao criar sua conta</h2>
+            <p class="text-justify">Não foi possível criar uma conta no sistema com o e-mail informado pois foi localizado um cadastro já ativo com essa conta.</p>
+            <a asp-controller="Usuarios" asp-action="Login" role="button" class="btn btn-danger">OK</a>
+        }
+
+        @if (ViewBag.ContaCriada)
+        {
+            <h2>Conta criada com sucesso</h2>
+            <p class="text-justify">
+                Obrigado @ViewBag.Usuario, sua conta foi criada com sucesso!<br />
+                Agora você poderá utilizar todos os nossos serviços!
+            </p>
+            <a asp-controller="Usuarios" asp-action="Login" role="button" class="btn btn-danger">Entrar</a>
+        }
+
+    </div>
+
+</div>

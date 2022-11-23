@@ -1,0 +1,63 @@
+﻿@model EasyPark.EasyPark.Domain.Responses.VitrineServicos;
+@{
+    ViewData["Title"] = "Resultado da pesquisa";
+    Layout = "~/Views/Shared/_LayoutCliente.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        @if (Model.BuscaQuantidadeRegistro == 0)
+        {
+            <h2>Resultado da sua busca</h2>
+            <p>Não foi localizado nem um resultado para o termo @ViewBag.Pesquisa</p>
+        }
+        else
+        {
+            <h2>Resultado da sua busca</h2>
+
+            <p>Foram localizados @Model.BuscaQuantidadeRegistro registros para o termo pesquisado.</p>
+
+
+            @foreach (var servico in Model.VitrinePrestadoresServicos)
+            {
+                <br />
+                <h2>@servico.NomePrestador</h2>
+                <p class="text-justify">Nome do serviço prestado: @servico.NomeServico.</p>
+                <p class="text-justify">Endereço:: @servico.Endereco - @servico.Estado.</p>
+                <p class="text-justify">Horário de funcionamento: @servico.HorarioFuncionamento</p>
+                <p class="text-justify">Telefone: @servico.TelefonePrestador</p>
+                <p class="text-justify">Empresa / grupo responsável: @servico.NomeResponsavel.</p>
+            }
+
+
+            @foreach (var estacionamento in Model.VitrineEstacionamento)
+            {
+                <br />
+                <h2>@estacionamento.NomeEstacionamento</h2>
+                <p class="text-justify">Endereço de atuação: @estacionamento.Endereco - @estacionamento.NomeEstado.</p>
+                <p class="text-justify">Horário de funcionamento: @estacionamento.HorarioFuncionamento.</p>
+                <p class="text-justify">Telefone: @estacionamento.Telefone</p>
+                <p class="text-justify">Totais de vagas disponíveis: @estacionamento.TotaisVagas.</p>
+                <p class="text-justify">Vagas para carros elétricos: @estacionamento.VagasEletricas.</p>
+                <p class="text-justify">Vagas preferenciais: @estacionamento.VagasPreferenciais.</p>
+                <p class="text-justify">Vagas comuns: @estacionamento.VagasComuns.</p>
+                <p class="text-justify">Empresa / grupo responsável: @estacionamento.NomeResponsavel.</p>
+            }
+
+
+        }
+    </div>
+   
+
+
+</div>
+<div class="col-md-12">
+    <div class="row">
+        <p class="text-justify">Esses foram os resultados obtidos através da sua pesquisa.
+        
+        <br /> Caso o resultado não tenha sido o esperado, você poderá retornar e reaplicar o filtro de acordo com os termos da sua pesquisa.
+        </p>
+        <button onclick="history.back(-1)" class="btn btn-primary">Voltar</button>
+    </div>
+</div>

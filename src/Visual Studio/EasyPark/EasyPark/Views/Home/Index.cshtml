@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<div class="row">
+    <div class="col-md-12">
+        <h2>Seja bem vindo ao Easy Park, onde sua procura se torna realidade!</h2>
+        <p class="text-justify">Estacionamentos, chaveiros, lava-rápido e muito mais. E o melhor, tudo isso na palma de sua mão.</p>
+        <p class="text-justify">
+            Se você ainda não tem um cadastro no sistema, aproveite e crie sua conta gratuitamente para utilizar nossos serviços!
+            <br />
+            <a asp-controller="Usuarios" asp-action="NovoUsuario" role="button" class="btn btn-primary">Criar conta</a>
+        </p>
+        <p class="text-justify">
+            Caso já tenha uma conta criada, acesse o sistema para aproveitar os serviços disponíveis que temos pra você.
+            <br /><a asp-controller="Usuarios" asp-action="Login" role="button" class="btn btn-success">Entrar</a>
+
+        </p>
+    </div>
+
+</div>
+

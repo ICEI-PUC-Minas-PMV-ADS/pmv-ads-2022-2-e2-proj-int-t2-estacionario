@@ -1,0 +1,61 @@
+﻿@model EasyPark.EasyPark.Domain.Responses.VitrineServicos;
+@{
+    ViewData["Title"] = "Serviços geral";
+    Layout = "~/Views/Shared/_LayoutCliente.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Serviços disponíveis</h2>
+        <p class="text-justify">
+            Aqui você terá acesso a todos os serviços cadastrados no sistema. <br />
+            Confira a listagem dos serviços prestados abaixo.
+        </p>
+        @if (Model.VitrineEstacionamento.Count() == 0 & Model.VitrinePrestadoresServicos.Count == 0)
+        {
+
+            <p class="text-justify">
+                Ops! ainda não há serviços cadastrados por aqui.<br />
+                Continue sempre consultando pois estamos em constante atualização!
+            </p>
+        }
+
+        @if (Model.VitrinePrestadoresServicos.Count() != 0)
+        {
+
+            @foreach (var servico in Model.VitrinePrestadoresServicos)
+            {
+                <br />
+                <h2>@servico.NomePrestador</h2>
+                <p class="text-justify">Nome do serviço prestado: @servico.NomeServico.</p>
+                <p class="text-justify">Endereço:: @servico.Endereco - @servico.Estado.</p>
+                <p class="text-justify">Horário de funcionamento: @servico.HorarioFuncionamento</p>
+                <p class="text-justify">Telefone: @servico.TelefonePrestador</p>
+                <p class="text-justify">Empresa / grupo responsável: @servico.NomeResponsavel.</p>
+            }
+
+
+        }
+
+        @if (Model.VitrineEstacionamento.Count() != 0)
+        {
+
+            @foreach (var estacionamento in Model.VitrineEstacionamento)
+            {
+                <br />
+                <h2>@estacionamento.NomeEstacionamento</h2>
+                <p class="text-justify">Endereço de atuação: @estacionamento.Endereco - @estacionamento.NomeEstado.</p>
+                <p class="text-justify">Horário de funcionamento: @estacionamento.HorarioFuncionamento.</p>
+                <p class="text-justify">Telefone: @estacionamento.Telefone</p>
+                <p class="text-justify">Totais de vagas disponíveis: @estacionamento.TotaisVagas.</p>
+                <p class="text-justify">Vagas para carros elétricos: @estacionamento.VagasEletricas.</p>
+                <p class="text-justify">Vagas preferenciais: @estacionamento.VagasPreferenciais.</p>
+                <p class="text-justify">Vagas comuns: @estacionamento.VagasComuns.</p>
+                <p class="text-justify">Empresa / grupo responsável: @estacionamento.NomeResponsavel.</p>
+            }
+
+        }
+    </div>
+
+</div>

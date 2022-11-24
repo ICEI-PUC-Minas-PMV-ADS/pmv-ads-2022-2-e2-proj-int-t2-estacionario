@@ -7,7 +7,7 @@
     <div class="col-md-12">
         <h2>Área principal do cliente</h2>
         <p class="text-justify">
-            Aqui você poderá consultar todos os serviços que a Easy Park oferece para você!
+            Aqui você poderá consultar todos os serviços que a Easypark oferece para você!
             <br />
             Pintou uma urgência aí ou precisa de um bom local para deixar seu veículo, conte com a gente!
             <br />
@@ -18,7 +18,7 @@
             Para conferir mais serviços disponíveis, expande o menu e escolha a opção referente.
         </p>
         <br />
-        <h2 class="display-2">ùltimos serviços cadastrados</h2>
+        <h2 class="display-4">Últimos serviços cadastrados</h2>
         @if (Model.VitrineEstacionamento.Count() == 0 & Model.VitrinePrestadoresServicos.Count==0)
                 {
              
@@ -34,7 +34,7 @@
             @foreach (var servico in Model.VitrinePrestadoresServicos)
             {
                 <br />
-                <h2>@servico.NomePrestador</h2>
+                <h3>@servico.NomePrestador</h3>
                 <p class="text-justify">Nome do serviço prestado: @servico.NomeServico.</p>
                 <p class="text-justify">Endereço:: @servico.Endereco - @servico.Estado.</p>
                 <p class="text-justify">Horário de funcionamento: @servico.HorarioFuncionamento</p>

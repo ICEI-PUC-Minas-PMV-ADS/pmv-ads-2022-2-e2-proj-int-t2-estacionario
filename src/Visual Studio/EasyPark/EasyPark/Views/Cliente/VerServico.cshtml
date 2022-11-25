@@ -7,7 +7,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        <h2>Serviços disponíveis</h2>
+        <h2 class="text-center">Serviços disponíveis</h2>
         <p class="text-justify">
             Aqui você terá acesso a todos os serviços cadastrados no sistema. <br />
             Confira a listagem dos serviços prestados abaixo.
@@ -45,15 +45,18 @@
             @foreach (var estacionamento in Model.VitrineEstacionamento)
             {
                 <br />
-                <h2>@estacionamento.NomeEstacionamento</h2>
-                <p class="text-justify">Endereço de atuação: @estacionamento.Endereco - @estacionamento.NomeEstado.</p>
-                <p class="text-justify">Horário de funcionamento: @estacionamento.HorarioFuncionamento.</p>
-                <p class="text-justify">Telefone: @estacionamento.Telefone</p>
-                <p class="text-justify">Totais de vagas disponíveis: @estacionamento.TotaisVagas.</p>
-                <p class="text-justify">Vagas para carros elétricos: @estacionamento.VagasEletricas.</p>
-                <p class="text-justify">Vagas preferenciais: @estacionamento.VagasPreferenciais.</p>
-                <p class="text-justify">Vagas comuns: @estacionamento.VagasComuns.</p>
-                <p class="text-justify">Empresa / grupo responsável: @estacionamento.NomeResponsavel.</p>
+                <h3>@estacionamento.NomeEstacionamento</h3>
+                <div class="text-justify">
+                    Endereço de atuação: @estacionamento.Endereco - @estacionamento.NomeEstado.
+                    <br />Horário de funcionamento: @estacionamento.HorarioFuncionamento.
+                    <br />Telefone: @estacionamento.Telefone
+                    <br />Quantidade de Vagas:
+                    <br />Totais de vagas disponíveis: @estacionamento.TotaisVagas.
+                    <br />Vagas para carros elétricos: @estacionamento.VagasEletricas.
+                    <br />Vagas preferenciais: @estacionamento.VagasPreferenciais.
+                    <br />Vagas comuns: @estacionamento.VagasComuns.
+                    <br />Empresa / grupo responsável: @estacionamento.NomeResponsavel.
+                </div>
             }
 
         }

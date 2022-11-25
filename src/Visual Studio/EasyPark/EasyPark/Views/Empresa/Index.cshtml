@@ -4,15 +4,16 @@
     Layout = "~/Views/Shared/_LayoutEmpresa.cshtml";
 }
 
-<div class="row">
+<div class="text-center">
     <div dlass="col-md-12">
         <h2>Área do administrador</h2>
-        <p class="text-justify">Olá @ViewData["NomeUsuarioLogadoEmpresa"] seja bem-vindo (a) a sua tela de administrador.</p>
+        <br />
+        <p class="text-justify">Olá <strong>@ViewData["NomeUsuarioLogadoEmpresa"]</strong> seja bem-vindo(a) a sua tela de administrador.</p>
         <p class="text-justify">
             Aqui você poderá cadastrar e gerenciar os estacionamentos que você administra.<br />
-            Nota: você poderá cadastrar quantos estacionamentos desejar uma vez que os mesmos estarão sempre atrelados ao seu perfil.
+            <strong>Nota</strong>: você poderá cadastrar quantos estacionamentos desejar uma vez que os mesmos estarão sempre atrelados ao seu perfil.
         </p>
-        <p class="text--justify">Expanda o menu para ter acesso as opções do sistema.</p>
+        <p class="text-justify">Expanda o menu para ter acesso as opções do sistema.</p>
     </div>
 
 </div>

@@ -6,39 +6,38 @@
 }
 
 
-<div class="row">
+<div class="text-center">
     <div class="col-md-12">
         <h2>Cadastro de novos estacionamentos no sistema</h2>
         <p class="text-justify">Realize aqui as inserções de novos estacionamentos.</p>
         <br />
-
     </div>
 </div>
 
 <form asp-action="EfetivarCadastroEstacionamento" method="POST" onsubmit="return;true">
     <div class="row">
         <div class="col-md-6">
-            <label for="NomeEstacionamento" id="LblNomeEstacionamento" class="control-label">Informe o nome do estacionamento</label>
+            <label for="NomeEstacionamento" id="LblNomeEstacionamento" class="control-label">Informe o nome do estacionamento:</label>
             <input type="text" id="NomeEstacionamento" class="form-group" asp-for="@Model.NomeEstacionamento" />
         </div>
         <div class="col-md-6">
-            <label for="TelefoneEstacionamento" id="LblTelefoneEstacionamento" class="control-label">Telefone de contato</label>
+            <label for="TelefoneEstacionamento" id="LblTelefoneEstacionamento" class="control-label">Telefone de contato:</label>
             <input type="tel" id="TelefoneEstacionamento" class="form-group" asp-for="@Model.Telefone" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <label for="HorarioFuncionamentoEstacionamento" id="LblHorarioFuncionamentoEstacionamento" class="control-label">Informe o horário de atendimento</label>
+            <label for="HorarioFuncionamentoEstacionamento" id="LblHorarioFuncionamentoEstacionamento" class="control-label">Informe o horário de atendimento:</label>
             <input type="text" id="HorarioFuncionamentoEstacionamento" placeholder="Ex: das 9 as 16." class="form-group" asp-for="@Model.HorarioFuncionamento" />
         </div>
         <div class="col-md-6">
-            <label for="EnderecoEstacionamento" id="LblEnderecoEstacionamento" class="control-label">Informe o endereço completo</label>
+            <label for="EnderecoEstacionamento" id="LblEnderecoEstacionamento" class="control-label">Informe o endereço completo:</label>
             <input type="text" id="EnderecoEstacionamento" class="form-group" placeholder="Ex: AV das paumeiras 110 barrinhos - Santa Rita." asp-for="@Model.Endereco" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <label for="EstadoEstacionamento" id="LblEstadoEstacionamento" class="control-label">Selecione o estado</label>
+            <label for="EstadoEstacionamento" id="LblEstadoEstacionamento" class="control-label">Selecione o estado:</label>
             <select id="EstadoEstacionamento" class="dropdown" asp-for="@Model.EstadoAtuacao">
                 @foreach (var estado in Model.estados)
                 {
@@ -46,23 +45,30 @@
                 }
             </select>
         </div>
-        <div class="col-md-6">
-            <label for="QuantidadeTotalVagasEstacionamento" id="LblQuantidadeTotalVagaEstacionamento" class="control-label">Informe a quantidade máxima de vagas disponíveis</label>
-            <input type="number" id="QuantidadeTotalVagasEstacionamento" class="form-group" asp-for="@Model.TotaisVagas" />
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Quantidade de vagas</h4>
+            <br />
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <label for="VagasEletricas" id="LblVagasEletricas" class="control-label">Informe a quantidade de vagas disponíveis para carros elétricos</label>
-            <input type="number" id="VagasEletricas" class="form-group" asp-for="@Model.VagasEletricas" />
+    <div class="flex-lg-row">
+        <div class="col">
+            <label for="QuantidadeTotalVagasEstacionamento" id="LblQuantidadeTotalVagaEstacionamento" class="control-label">Informe a quantidade máxima de vagas disponíveis: </label>
+            <input type="number" id="QuantidadeTotalVagasEstacionamento" class="form-group col-1" asp-for="@Model.TotaisVagas" />
         </div>
-        <div class="col-md-4">
-            <label for="VagasPreferenciais" id="LblVagasPreferenciais" class="control-label">Informe a quantidade de vagas pereferenciais disponíveis</label>
-            <input type="number" id="VagasPreferenciais" class="form-group" asp-for="@Model.VagasPreferenciais" />
+        <div class="col">
+            <label for="VagasEletricas" id="LblVagasEletricas" class="control-label">Informe a quantidade de vagas disponíveis para carros elétricos: </label>
+            <input type="number" id="VagasEletricas" class="form-group col-1" asp-for="@Model.VagasEletricas" />
         </div>
-        <div class="col-md-4">
-            <label for="VagasComuns" id="LblVagasComuns" class="control-label">Informe a quantidade para vagas comuns</label>
-            <input type="number" id="VagasComuns" class="form-group" asp-for="@Model.VagasComuns" />
+        <div class="col">
+            <label for="VagasPreferenciais" id="LblVagasPreferenciais" class="control-label">Informe a quantidade de vagas pereferenciais disponíveis: </label>
+            <input type="number" id="VagasPreferenciais" class="form-group col-1" asp-for="@Model.VagasPreferenciais" />
+        </div>
+        <div class="col">
+            <label for="VagasComuns" id="LblVagasComuns" class="control-label">Informe a quantidade para vagas comuns: </label>
+            <input type="number" id="VagasComuns" class="form-group col-1" asp-for="@Model.VagasComuns" />
         </div>
     </div>
     <div class="row">

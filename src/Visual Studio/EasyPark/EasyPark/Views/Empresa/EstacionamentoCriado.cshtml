@@ -4,11 +4,11 @@
     Layout = "~/Views/Shared/_LayoutEmpresa.cshtml";
 }
 
-<div class="row">
+<div class="text-center">
     <div class="col-md-12">
         <h2>Cadastro realizado com sucesso</h2>
         <br />
-        <p class="text-justify">O estacionamento @ViewBag.NomeEstacionamentoCriado, foi cadastrado com sucesso no sistema!</p>
+        <p>O estacionamento <strong>@ViewBag.NomeEstacionamentoCriado</strong>, foi cadastrado com sucesso no sistema!</p>
         <br />
         <a asp-action="GerenciarEstacionamento" class="btn btn-primary" role="button">OK</a>
     </div>

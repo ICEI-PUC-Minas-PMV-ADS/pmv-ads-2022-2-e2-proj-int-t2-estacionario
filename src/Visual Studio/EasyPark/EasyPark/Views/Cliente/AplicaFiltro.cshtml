@@ -21,20 +21,21 @@
 
             @foreach (var servico in Model.VitrinePrestadoresServicos)
             {
+                <h3>@servico.NomePrestador</h3>
+                <p class="text-justify">
+                    Nome do serviço prestado: @servico.NomeServico.
+                    <br />Endereço: @servico.Endereco - @servico.Estado.
+                    <br />Horário de funcionamento: @servico.HorarioFuncionamento
+                    <br />Telefone: @servico.TelefonePrestador
+                    <br />Empresa / grupo responsável: @servico.NomeResponsavel.
+                </p>
                 <br />
-                <h2>@servico.NomePrestador</h2>
-                <p class="text-justify">Nome do serviço prestado: @servico.NomeServico.</p>
-                <p class="text-justify">Endereço:: @servico.Endereco - @servico.Estado.</p>
-                <p class="text-justify">Horário de funcionamento: @servico.HorarioFuncionamento</p>
-                <p class="text-justify">Telefone: @servico.TelefonePrestador</p>
-                <p class="text-justify">Empresa / grupo responsável: @servico.NomeResponsavel.</p>
-            }
-
+                }
 
             @foreach (var estacionamento in Model.VitrineEstacionamento)
             {
                 <br />
-                <h2>@estacionamento.NomeEstacionamento</h2>
+                <h3>@estacionamento.NomeEstacionamento</h3>
                 <p class="text-justify">Endereço de atuação: @estacionamento.Endereco - @estacionamento.NomeEstado.</p>
                 <p class="text-justify">Horário de funcionamento: @estacionamento.HorarioFuncionamento.</p>
                 <p class="text-justify">Telefone: @estacionamento.Telefone</p>

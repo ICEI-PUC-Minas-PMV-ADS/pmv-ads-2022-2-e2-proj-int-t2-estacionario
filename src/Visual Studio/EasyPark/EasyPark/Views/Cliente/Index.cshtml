@@ -14,14 +14,15 @@
             Temos diverços parceiros por todo território nacional que utilizam nossa ferramenta para divulgar seus serviços bem como estacionamentos por vários pontos com localização facilitada. E claro, sempre perto de você!
         </p>
         <p class="text-justify">Se você também quer ser uns de nossos parceiros, saiba que também é possível!</p>
-        <p class="text-justify">Confira os últimos serviços que temos cadastrados no sistema. <strong>Observação, aqui será listados apenas os primeiros serviços!</strong><br />
+        <p class="text-justify">
+            Confira os últimos serviços que temos cadastrados no sistema. <strong>Observação, aqui será listados apenas os primeiros serviços!</strong><br />
             Para conferir mais serviços disponíveis, expande o menu e escolha a opção referente.
         </p>
         <br />
         <h2 class="display-4">Últimos serviços cadastrados</h2>
-        @if (Model.VitrineEstacionamento.Count() == 0 & Model.VitrinePrestadoresServicos.Count==0)
-                {
-             
+        @if (Model.VitrineEstacionamento.Count() == 0 & Model.VitrinePrestadoresServicos.Count == 0)
+        {
+
             <p class="text-justify">
                 Ops! ainda não há serviços cadastrados por aqui.<br />
                 Continue sempre consultando pois estamos em constante atualização!
@@ -33,16 +34,16 @@
 
             @foreach (var servico in Model.VitrinePrestadoresServicos)
             {
-                <br />
                 <h3>@servico.NomePrestador</h3>
-                <p class="text-justify">Nome do serviço prestado: @servico.NomeServico.</p>
-                <p class="text-justify">Endereço:: @servico.Endereco - @servico.Estado.</p>
-                <p class="text-justify">Horário de funcionamento: @servico.HorarioFuncionamento</p>
-                <p class="text-justify">Telefone: @servico.TelefonePrestador</p>
-                <p class="text-justify">Empresa / grupo responsável: @servico.NomeResponsavel.</p>
-            }
-
-
+                <p class="text-justify">
+                    Nome do serviço prestado: @servico.NomeServico.
+                    <br />Endereço: @servico.Endereco - @servico.Estado.
+                    <br />Horário de funcionamento: @servico.HorarioFuncionamento
+                    <br />Telefone: @servico.TelefonePrestador
+                    <br />Empresa / grupo responsável: @servico.NomeResponsavel.
+                </p>
+                <br />
+             }
         }
 
         @if (Model.VitrineEstacionamento.Count() != 0)
@@ -51,7 +52,7 @@
             @foreach (var estacionamento in Model.VitrineEstacionamento)
             {
                 <br />
-                <h2>@estacionamento.NomeEstacionamento</h2>
+                <h3>@estacionamento.NomeEstacionamento</h3>
                 <p class="text-justify">Endereço de atuação: @estacionamento.Endereco - @estacionamento.NomeEstado.</p>
                 <p class="text-justify">Horário de funcionamento: @estacionamento.HorarioFuncionamento.</p>
                 <p class="text-justify">Telefone: @estacionamento.Telefone</p>

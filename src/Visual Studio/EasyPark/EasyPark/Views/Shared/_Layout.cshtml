@@ -22,6 +22,8 @@
                     <a href="#MarcoFooter" class="btn btn-secondary" role="button">Ir para o rodapé</a>
                 </div>
             </div>
+            <br />
+
             <div class="container text-center">
                 <div class="row align-items-start">
                     <div class="col-1">
@@ -29,7 +31,7 @@
                     </div>
                     <div class="col">
                         <h1 style="text-align:center">Easypark</h1>
-                        <h3 style="text-align:center">A sua melhor opção</h3>
+                        <p class="h3" style="text-align:center">A sua melhor opção</p>
                     </div>
                 </div>
             </div>
@@ -37,24 +39,26 @@
             <div class="row">
                 <div class="col-md4">
                     <span id="MarcoMenu"></span>
+                    <button type="button" class="btn btn-info" id="btnMenu" aria-expanded="false" onclick="HabilitarMenu();">Menu<span class="glyphicon-plus" id="icosExpand" aria-hidden="true"></span></button>
                     <span id="MenuPrincipal" style="display:none">
-                        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                        <div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
                             <link class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Início</a>
-                            <link class="nav-item" />
+                            <link class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Usuarios" asp-action="NovoUsuario">Criar conta no sistema</a>
-                            <link class="nav-item" />
+                            <link class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Usuarios" asp-action="Login">Login</a>
-                        </nav>
+                        </div>
                     </span>
-                    <button type="button" class="btn btn-default" id="btnMenu" aria-expanded="false" onclick="HabilitarMenu();">Menu<span class="glyphicon-plus" id="icosExpand" aria-hidden="true"></span></button>
                 </div>
+            </div>
+        </div>
 
-                <div class="col-md4">
-                    <p class="text-justify">
-                        Easy Park - Simples, rápido e barato!
-                        <br />Encontre um estacionamento de forma prática próximo de você!
-                </div>
+        <div class="container text-center">
+            <div class="col">
+                <p class="text-center">
+                    Easy Park - Simples, rápido e barato!
+                    <br />Encontre um estacionamento de forma prática próximo de você!
             </div>
         </div>
     </header>
@@ -65,8 +69,7 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
-   
+    </div>   
     
     <span id="MarcoFotter"></span>
     <footer class="border-top footer text-muted" aria-label="footer">

@@ -27,23 +27,23 @@
 
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-md-1">
                         <img width="100" height="100" src="~/Imagens/logo.png" alt="Logo Easypark">
                     </div>                    
-                        <div class="col">
+                        <div class="col-md-8">
                             <h1 style="text-align:center">Easypark</h1>
                             <p class="h3" style="text-align:center">A sua melhor opção</p>
                         </div>                                        
-                        <div class="col">
+                        <div class="col-md-3">
                             <a asp-controller="Usuarios" asp-action="Sair" role="button" class="btn btn-primary">Sair do sistema</a>
                         </div>
                 </div>                
             </div>
             <br />
 
-            <p class="text-justify">Olá @ViewData["NomeUsuarioLogado"], você está logado(a). Seu perfil atual é como Cliente.</p>
+            <p class="text-justify">Olá <strong>@ViewData["NomeUsuarioLogado"]</strong>, você está logado(a). Seu perfil atual é como Cliente.</p>
 
-            <div class="row">
+            <div class="container">
                 <div class="col-md4">
                     <span id="MarcoMenu"></span>
                     <button type="button" class="btn btn-info" id="btnMenu" aria-expanded="false" onclick="HabilitarMenu();">Menu<span class="glyphicon-plus" id="icosExpand" aria-hidden="true"></span></button>

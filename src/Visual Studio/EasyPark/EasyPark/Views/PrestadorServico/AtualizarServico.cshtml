@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_LayoutPrestadorServico.cshtml";
 }
 
-<div class="row">
+<div class="text-center">
     <div class="col-md-12">
         <h2>Atualizar serviço @Model.NomeServico</h2>
         <p class="text-justify">Realize a atualização do serviço selecionado e depois de tudo pronto, basta pressionarl o botão salvar.</p>
@@ -51,15 +51,11 @@
         <div class="col-md-6">
             <label for="Estado" id="LblEstado" class="control-label">Selecione o estado de atuação</label>
             <select id="Estado" class="dropdown" asp-for="@Model.EstadoId">
-
-
-
-
-                <option value=@Model.estados.Where(x => x.EstadoId == Model.EstadoId).FirstOrDefault().EstadoId>@Model.estados.Where(x => x.EstadoId == Model.EstadoId).FirstOrDefault().NomeEstado</option>
-                @foreach (var estados in Model.estados)
-                {
-                    <option value=@estados.EstadoId>@estados.NomeEstado</option>
-                }
+            <option value=@Model.estados.Where(x => x.EstadoId == Model.EstadoId).FirstOrDefault().EstadoId>@Model.estados.Where(x => x.EstadoId == Model.EstadoId).FirstOrDefault().NomeEstado</option>
+             @foreach (var estados in Model.estados)
+             {
+                <option value=@estados.EstadoId>@estados.NomeEstado</option>
+             }
             </select>
         </div>
     </div>

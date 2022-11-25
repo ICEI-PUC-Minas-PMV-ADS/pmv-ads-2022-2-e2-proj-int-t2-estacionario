@@ -20,33 +20,25 @@
             <a asp-action="PrestadorServico" role="button" class="btn btn-primary">Criar serviços</a>
         }
 
-
-
-
-
         @if (@Model.Count() > 0)
         {
-            <h2>Gerencie os serviços cadastrados</h2>
+            <h2 class="text-center">Gerencie os serviços cadastrados</h2>
             <p class="text-justify">Confira abaixo os serviços cadastrados por você. Nessa tela você poderá realizar atualização ou a deleção do mesmo.</p>
             <p class="text-justify">Há @Model.Count() estabelecimentos sobre sua gestão.</p>
-            <br />
-
+            
             @foreach (var servicos in Model)
             {
                 <br />
-                <h2 id="@servicos.PrestadorServicosId">@servicos.NomePrestador</h2>
-                <p class="text-justify">Especialidade do serviço: @servicos.NomeServico</p>
-                <p class="text-justify">Endereço: @servicos.Endereco - @servicos.Estado.</p>
-                <p class="text-justify">Horário de funcionamento: @servicos.HorarioFuncionamento.</p>
-                <p class="text-justify">Telefone: @servicos.TelefonePrestador.</p>
-                <br />
-                <a asp-action="DeletarServico" asp-route-id="@servicos.PrestadorServicosId" role="button" class="btn btn-secondary" title="@servicos.NomePrestador">Deletar serviço @servicos.NomeServico</a>
+                <h3 id="@servicos.PrestadorServicosId">@servicos.NomePrestador</h3>
+                <div class="text-justify">Especialidade do serviço: @servicos.NomeServico<br />
+                Endereço: @servicos.Endereco - @servicos.Estado.<br />
+                Horário de funcionamento: @servicos.HorarioFuncionamento.<br />
+                Telefone: @servicos.TelefonePrestador.</div>
                 <br />
                 <a asp-action="AtualizarServico" asp-route-id="@servicos.PrestadorServicosId" role="button" class="btn btn-primary" btn-secondary" title="@servicos.NomePrestador">Atualizar serviço @servicos.NomeServico</a>
-
+                <a asp-action="DeletarServico" asp-route-id="@servicos.PrestadorServicosId" role="button" class="btn btn-secondary" title="@servicos.NomePrestador">Deletar serviço @servicos.NomeServico</a>
                 <br />
             }
         }
-
     </div>
-    </div>
+</div>

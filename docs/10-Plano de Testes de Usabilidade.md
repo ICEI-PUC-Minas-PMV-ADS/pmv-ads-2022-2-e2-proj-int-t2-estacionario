@@ -79,6 +79,7 @@ Muito importante! Durante a atividade:
 * Ao final de cada tarefa, finalizada ou não, o moderador e os observadores poderão fazer algumas perguntas sobre o processo, ações tomadas e escolhas que você fez durante a execução. Acesso ao ambiente https://www.xxxx.xx.xx
 
 Roteiro do Cliente:
+
 Atividade 01: Você deverá realizar um cadastro na aplicação de usuário comum através do link: https://www.xxxx.xx.xx
 
 Atividade 02: Você deve fazer login na aplicação como usuário comum com as credenciais criadas no cadastro através do link https://www.xxxx.xx.xx
@@ -90,6 +91,7 @@ Atividade 04: Você deve fazer uma reserva de vaga em algum estacionamento confo
 Atividade 05: Você deve localizar e verificar as informações de um “lava rápido” dentro da aplicação no seguinte link https://www.xxxx.xx.xx
 
 Roteiro do Administrador:
+
 Atividade 01: Você deverá realizar um cadastro na aplicação de um usuário dono de estacionamento ou prestador de serviço através do link: https://www.xxxx.xx.xx
 
 Atividade 02: Você deve fazer login na aplicação como usuário comum com as credenciais criadas no cadastro

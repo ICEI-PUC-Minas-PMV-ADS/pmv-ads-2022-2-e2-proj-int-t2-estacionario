@@ -7,19 +7,19 @@
     <div class="col-md-12">
         @if (ViewBag.ContaExiste)
         {
-            <h2 style="color:red">Erro ao criar sua conta</h2>
+            <h2 style="color:red" class="text-center">Erro ao criar sua conta</h2>
             <p class="text-justify">Não foi possível criar uma conta no sistema com o e-mail informado pois foi localizado um cadastro já ativo com essa conta.</p>
             <a asp-controller="Usuarios" asp-action="Login" role="button" class="btn btn-danger">OK</a>
         }
 
         @if (ViewBag.ContaCriada)
         {
-            <h2>Conta criada com sucesso</h2>
+            <h2 class="text-center">Conta criada com sucesso</h2>
             <p class="text-justify">
                 Obrigado <strong>@ViewBag.Usuario</strong>, sua conta foi criada com sucesso!<br />
                 Agora você poderá utilizar todos os nossos serviços!
             </p>
-            <a asp-controller="Usuarios" asp-action="Login" role="button" class="btn btn-danger">Entrar</a>
+            <a asp-controller="Usuarios" asp-action="Login" role="button" class="btn btn-primary">Entrar</a>
         }
     </div>
 </div>

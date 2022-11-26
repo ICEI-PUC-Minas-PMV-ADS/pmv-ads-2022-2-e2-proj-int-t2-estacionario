@@ -9,22 +9,22 @@
 }
 
 <div class="text-center">
-    <div class="col-md-12">
+    <div class="col-md-12 mt-5 mb-4">
         <h2>Cadastrar novos serviços</h2>
-        <p class="text-justify">Nessa tela você poderá realizar a inserção dos serviços prestados. Preencha todos os campos corretamentes para garantir que os clientes encontrem os dados de forma objetiva.</p>
+        <p>Nessa tela você poderá realizar a inserção dos serviços prestados. Preencha todos os campos corretamentes para garantir que os clientes encontrem os dados de forma objetiva.</p>
     </div>
 </div>
 <br />
 
 <form asp-action="CriarServicos" mehtod="post"onsubmit="return;true">
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row mb-3">
+        <div class="col-md-6  d-flex justify-content-between align-items-center">
 
-            <label for="NomeEstabelecimento" id="LblEstabelecimento" class="control-label">Informe o nome do estabelecimento</label>
+            <label for="NomeEstabelecimento" id="LblEstabelecimento" class="control-label">Informe o nome do estabelecimento:</label>
             <input type="text" id="NomeEstabelecimento" class="form-group" placeholder="Insira o nome do local do prestador de serviço. EX: Guincho golveia" asp-for="@Model.NomePrestador" />
             </div>
-        <div class="col-md-6">
-            <label for="ServicoPrestado" id="LblServicoPrestado" class="control-label">Selecione o tipo de serviço</label>
+        <div class="col-md-6  d-flex justify-content-between align-items-center">
+            <label for="ServicoPrestado" id="LblServicoPrestado" class="control-label">Selecione o tipo de serviço:</label>
             <select id="ServicoPrestado" class="dropdown" asp-for="@Model.NomeServico">
                 <option value="Chaveiro">Chaveiro</option>
                 <option value="Guincho">Guincho</option>
@@ -32,24 +32,24 @@
                             </select>
         </div>
             </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label for="HorarioFuncionamento" id="LblHorarioFuncionamento" class="control-label">Informe o horário de funcionamento</label>
+    <div class="row mb-3">
+        <div class="col-md-6  d-flex justify-content-between align-items-center">
+            <label for="HorarioFuncionamento" id="LblHorarioFuncionamento" class="control-label">Informe o horário de funcionamento:</label>
             <input type="text" id="HorarioFuncionamento" class="form-group" asp-for="@Model.HorarioFuncionamento" />
         </div>
-        <div class="col-md-6">
-            <label for="Telefone" id="LblTelefone" class="control-label">Telefone de contato</label>
+        <div class="col-md-6  d-flex justify-content-between align-items-center">
+            <label for="Telefone" id="LblTelefone" class="control-label">Telefone de contato:</label>
             <input type="tel" id="Telefone" class="form-group" asp-for="@Model.TelefonePrestador" />
                    </div>
      </div>
 
     <div class="row">
-        <div class="col-md-6">
-            <label for="Endereco" id="LblEndereco" class="control-label">Informe o endereço completo</label>
+        <div class="col-md-6  d-flex justify-content-between align-items-center">
+            <label for="Endereco" id="LblEndereco" class="control-label">Informe o endereço completo:</label>
             <input type="text" id="Endereco" class="form-group" asp-for="@Model.Endereco" />
             </div>
-        <div class="col-md-6">
-            <label for="Estado" id="LblEstado" class="control-label">Selecione o estado de atuação</label>
+        <div class="col-md-6  d-flex justify-content-between align-items-center">
+            <label for="Estado" id="LblEstado" class="control-label">Selecione o estado de atuação:</label>
             <select id="Estado" class="dropdown" asp-for="@Model.EstadoAtuacao">
                 @foreach (var estados in Model.estados)
                 {
@@ -59,11 +59,11 @@
         </div>
             </div>
     <input type="hidden" value="@ViewBag.UsuarioIdLogado" asp-for="@Model.UsuarioPrestadorCriador" />
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row mt-4 mb-5 d-flex flex-row justify-content-between">
+        <div class="w-25">
             <input type="reset" class="btn btn-danger" value="Limpar dados" />
         </div>
-        <div class="col-md-6">
+        <div class="w-25 d-flex justify-content-end">
             <input type="submit" class="btn btn-success" value="Cadastrar serviço" />
         </div>
     </div>

@@ -3,32 +3,31 @@
     ViewData["Title"] = "Acesso ao sistema";
 }
 
-
 <div class="text-center">
-    <div class="col-md-12">
+    <div class="col-md-12 mt-5">
         <h2>Autenticação no sistema</h2>
         <br />
     </div>
 </div>
 
 <form asp-action="EfetivaLogin" method="post" onsubmit="return; true">
-    <div class="text-center">
-        <div class="container">
-            <div class="col">
+    <div class="text-center mb-5">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="w-25 d-flex justify-content-between">
                 <label for="email" id="LblEmail" class="control-label">Email</label>
                 <input type="email" id="email" class="form-group" asp-for="@Model.Email" />
             </div>
-            <div class="col">
-                <label for="senha" id="LblSenha" class="custom-control-label">Senha</label>
+            <div class="w-25 d-flex justify-content-between">
+                <label for="senha" id="LblSenha" class="control-label">Senha</label>
                 <input type="password" id="senha" class="form-group" asp-for="@Model.Senha" />
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row mt-3">
+            <div class="col ml-5 pl-5">
                 <input type="reset" class="btn btn-secondary" value="Limpar dados" />
 
             </div>
-            <div class="col">
+            <div class="col mr-5 pr-5">
                 <input type="submit" class="btn btn-success" value="Entrar" />
 
             </div>

@@ -18,6 +18,13 @@ Participantes convidados
 | 4 | Marcela Caldeira | Proprietária de carro elétrico |
 | 5 | Jéssica da Silva | Motorista |
 
+| Participantes | Nome | Condição |
+| :------------: | ------------------------------------------------------------------------------- | ------ |
+| 1 | Gustavo Matos | Proprietário de Estacionamento |
+| 2 | Kézia Assunção | Proprietária de Guincho |
+| 3 | Arthur Lourdes | Proprietário de Chaveiro |
+| 4 | Cristina Aguiar | Proprietária de Lava Rápido |
+
 Participantes confirmados
 
 ## 3 Processo
@@ -71,6 +78,7 @@ Muito importante! Durante a atividade:
 * Se estiver com dificuldade na realização da tarefa pedida, você pode desistir a qualquer momento. Avise o moderador, informando o motivo, e prossiga para a próxima tarefa;
 * Ao final de cada tarefa, finalizada ou não, o moderador e os observadores poderão fazer algumas perguntas sobre o processo, ações tomadas e escolhas que você fez durante a execução. Acesso ao ambiente https://www.xxxx.xx.xx
 
+Roteiro do Cliente:
 Atividade 01: Você deverá realizar um cadastro na aplicação de usuário comum através do link: https://www.xxxx.xx.xx
 
 Atividade 02: Você deve fazer login na aplicação como usuário comum com as credenciais criadas no cadastro através do link https://www.xxxx.xx.xx
@@ -80,6 +88,17 @@ Atividade 03: Você deve fazer uma busca por estacionamento com base na sua regi
 Atividade 04: Você deve fazer uma reserva de vaga em algum estacionamento conforme a sua condição e necessidade por meio do link https://www.xxxx.xx.xx
 
 Atividade 05: Você deve localizar e verificar as informações de um “lava rápido” dentro da aplicação no seguinte link https://www.xxxx.xx.xx
+
+Roteiro do Administrador:
+Atividade 01: Você deverá realizar um cadastro na aplicação de um usuário dono de estacionamento ou prestador de serviço através do link: https://www.xxxx.xx.xx
+
+Atividade 02: Você deve fazer login na aplicação como usuário comum com as credenciais criadas no cadastro
+
+Atividade 03: Você deve fazer o cadastro de um estacionamento ou serviço que presta e deve validar a listagem do serviço ou estacionamento na aba de gerenciamento
+
+Atividade 04: Você deve fazer uma atualização nas informações de um serviço ou estacionamento cadastrado.
+
+Atividade 05: Você deve excluir um estacionamento ou serviço cadastrado.
 
 Faça uma atividade por vez, na sequência indicada, expressando o que está pensando em voz alta e avise o moderador cada vez que finalizar uma tarefa. LEMBRE-SE: Quem está sendo testado é a aplicação, não você. Novamente agradecemos pela sua participação. Equipe Easypark
 
@@ -121,22 +140,54 @@ Listagem completa do que cada participante fará no teste
 
 Parte A: Enfoque: Adição/Configuração de novos itens através da status grid
 
-Atividade 01
+Roteiro do Cliente:
+Atividade 01:
 
-Objetivo: Verificar se o fluxo principal está funcionando Enunciado: Você deverá realizar um cadastro na aplicação de usuário comum através do link: https://www.xxxx.xx.xx
+Objetivo: Verificar se o fluxo principal está funcionando 
+Enunciado: Você deverá realizar um cadastro na aplicação de usuário comum através do link: https://www.xxxx.xx.xx
 
-Atividade 02
+Atividade 02:
 
-Objetivo: Verificar se o usuário consegue entender e o tempo que leva para fazer login Enunciado: Você deve fazer login na aplicação como usuário comum com as credenciais criadas no cadastro através do link https://www.xxxx.xx.xx
+Objetivo: Verificar se o usuário consegue entender e o tempo que leva para fazer login 
+Enunciado: Você deve fazer login na aplicação como usuário comum com as credenciais criadas no cadastro através do link https://www.xxxx.xx.xx
 
-Atividade 03
+Atividade 03:
 
-Objetivos: Verificar se o usuário consegue de forma simples e rápida localizar estacionamentos Enunciado: Você deve fazer uma busca por estacionamento com base na sua região através do link https://www.xxxx.xx.xx
+Objetivos: Verificar se o usuário consegue de forma simples e rápida localizar estacionamentos 
+Enunciado: Você deve fazer uma busca por estacionamento com base na sua região através do link https://www.xxxx.xx.xx
 
-Atividade 04
+Atividade 04:
 
-Objetivo: verificar se o usuário consegue entender os filtros de reserva de vagas de forma simples e ágil Enunciado: Você deve fazer uma reserva de vaga em algum estacionamento conforme a sua condição e necessidade por meio do link https://www.xxxx.xx.xx
+Objetivo: verificar se o usuário consegue entender os filtros de reserva de vagas de forma simples e ágil 
+Enunciado: Você deve fazer uma reserva de vaga em algum estacionamento conforme a sua condição e necessidade por meio do link https://www.xxxx.xx.xx
 
-Atividade 05
+Atividade 05:
 
-Objetivo: verificar se o usuário consegue compreender as informações dos estabelecimentos sugeridos Enunciado: Você deve localizar e verificar as informações de um “lava rápido” dentro da aplicação no seguinte link https://www.xxxx.xx.xx
+Objetivo: verificar se o usuário consegue compreender as informações dos estabelecimentos sugeridos 
+Enunciado: Você deve localizar e verificar as informações de um “lava rápido” dentro da aplicação no seguinte link https://www.xxxx.xx.xx
+
+Roteiro do Administrador:
+Atividade 01: 
+
+Objetivo: Verificar se o fluxo principal está funcionando 
+Enunciado: Você deverá realizar um cadastro na aplicação de um usuário dono de estacionamento ou prestador de serviço através do link: https://www.xxxx.xx.xx
+
+Atividade 02: 
+
+Objetivo: Verificar se o administrador consegue entender e o tempo que leva para fazer login 
+Enunciado: Você deve fazer login na aplicação como usuário comum com as credenciais criadas no cadastro
+
+Atividade 03: 
+
+Objetivo: Verificar se o administrador consegue preencher os campos e o tempo que leva para terminar um cadastro
+Enunciado: Você deve fazer o cadastro de um estacionamento ou serviço que presta e deve validar a listagem do serviço ou estacionamento na aba de gerenciamento
+
+Atividade 04: 
+
+Objetivo: Verificar se o administrador consegue localizar a funcionalidade e o tempo que leva para terminar uma atualização
+Enunciado: Você deve fazer uma atualização nas informações de um serviço ou estacionamento cadastrado.
+
+Atividade 05:
+
+Objetivo: Verificar se o administrador consegue localizar a funcionalidade e o tempo que leva para fazer uma exclusão
+Enunciado: Você deve excluir um estacionamento ou serviço cadastrado.

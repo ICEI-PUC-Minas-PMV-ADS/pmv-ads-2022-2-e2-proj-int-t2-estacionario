@@ -141,6 +141,7 @@ Listagem completa do que cada participante fará no teste
 Parte A: Enfoque: Adição/Configuração de novos itens através da status grid
 
 Roteiro do Cliente:
+
 Atividade 01:
 
 Objetivo: Verificar se o fluxo principal está funcionando 
@@ -167,6 +168,7 @@ Objetivo: verificar se o usuário consegue compreender as informações dos esta
 Enunciado: Você deve localizar e verificar as informações de um “lava rápido” dentro da aplicação no seguinte link https://www.xxxx.xx.xx
 
 Roteiro do Administrador:
+
 Atividade 01: 
 
 Objetivo: Verificar se o fluxo principal está funcionando 

@@ -2,20 +2,23 @@
     ViewData["Title"] = "Home";
 }
 <div class="row">
-    <div class="col-md-12">
-        <h2>Seja bem vindo ao Easypark, onde sua procura se torna realidade!</h2>
-        <p class="text-justify">
-            Estacionamentos, chaveiros, lava-rápido e muito mais. E o melhor, tudo isso na palma de sua mão.
-        </p>
-        <p class="text-justify">
-            Se você ainda não tem um cadastro no sistema, aproveite e crie sua conta gratuitamente para utilizar nossos serviços!
-            <br />
-            <a asp-controller="Usuarios" asp-action="NovoUsuario" role="button" class="btn btn-primary">Criar conta</a>
-        </p>
-        <p class="text-justify">
-            Caso já tenha uma conta criada, acesse o sistema para aproveitar os serviços disponíveis que temos pra você.
-            <br /><a asp-controller="Usuarios" asp-action="Login" role="button" class="btn btn-success">Entrar</a>
-        </p>
+<div class="col-md-12 mb-5">
+        <h2 class="mt-4">Seja bem vindo ao Easy Park, onde sua procura se torna realidade!</h2>
+        <p class="text-justify mt-2">Estacionamentos, chaveiros, lava-rápido e muito mais. E o melhor, tudo isso na palma de sua mão.</p>
+        <div class=" d-flex flex-row mt-3">
+            <div class="col-6 d-flex flex-column pr-3" style="border-right: 1px solid black">
+                <p class="text-justify">
+                    Se você ainda não tem um cadastro no sistema, aproveite e crie sua conta gratuitamente para utilizar nossos serviços!
+                </p>
+                <a asp-controller="Usuarios" asp-action="NovoUsuario" role="button" class="btn btn-primary mt-3">Criar conta</a>
+            </div>
+            <div class="col-6 d-flex flex-column pl-3">
+                <p class="text-justify">
+                    Caso já tenha uma conta criada, acesse o sistema para aproveitar os serviços disponíveis que temos pra você.
+                </p>
+                <a asp-controller="Usuarios" asp-action="Login" role="button" class="btn btn-success mt-3">Entrar</a>
+            </div>
+        </div>
     </div>
 </div>
 

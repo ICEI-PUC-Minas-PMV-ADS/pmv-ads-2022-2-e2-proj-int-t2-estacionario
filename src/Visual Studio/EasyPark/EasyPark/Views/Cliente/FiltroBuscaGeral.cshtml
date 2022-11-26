@@ -5,17 +5,16 @@
 }
 
 <div class="text-center">
-    <div class="col-md12">
+    <div class="col-md12 mt-5">
         <h2>Filtro de busca geral</h2>
-        <p class="text-justify">Realize a busca no sistema utilizando os parâmetros do filtro abaixo.</p>
-        <br />
-
+        <p>Realize a busca no sistema utilizando os parâmetros do filtro abaixo.</p>
+        <br/>
     </div>
 </div>
 
 <form asp-action="AplicaFiltro" method="post" onsubmit="return;true">
     
-        <div class="col">
+        <div class="col mb-3">
             <label for="Estado" id="" LblEstado" class="control-label">Selecione o estado da busca</label>
             <select id="Estado" class="dropdown" asp-for="@Model.Estado">
                 @foreach (var est in Model.estados)
@@ -24,12 +23,12 @@
                 }
             </select>
         </div>
-        <div class="col-md-6">
-            <label for="Busca" class="control-label" id="LblBusca">Termo a ser pesquisado</label>
+        <div class="col-md-12 d-flex flex-row align-items-end mb-3">
+            <label for="Busca" class="control-label w-25" id="LblBusca">Termo a ser pesquisado</label>
             <input type="search" id="Busca" class="form-control" placeholder="Busque por serviços, estacionamentos endereço em geral..." asp-for="@Model.CampoBusca" />
         </div>
     
-    <div class="row">
+    <div class="row ml-4">
         <fieldset>
             <legend class="text-info">Parâmetros do filtro</legend>
             <div class="col">
@@ -50,8 +49,8 @@
             </div>
         </fieldset>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 mt-5 mb-5">
+        <input type="reset" class="btn btn-danger" value="Limpar Filtro" />
         <input type="submit" class="btn btn-success" value="Aplicar Filtro" />
-        <input type="reset" class="btn btn-danger" value="Limpar Filtro" />        
     </div>
 </form>

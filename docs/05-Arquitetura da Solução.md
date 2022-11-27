@@ -35,11 +35,8 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+A aplicação está hospedada na https://www.smarterasp.net/ em uma conta gratuita de 60 dias.
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+Foi realizada a inclusão do banco de dados, criado no Microsoft SQL Server, e a atualização do appsetting.json para a inclusão do ConnectionString que vincula a aplicação no novo local do banco de dados. Após essa atualização, foi feito a inclução dos códigos no site da smartarasp.net.
+
+O endereço que está a aplicação é o http://fernends-001-site1.itempurl.com

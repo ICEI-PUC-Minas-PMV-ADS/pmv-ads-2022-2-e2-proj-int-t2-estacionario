@@ -13,6 +13,8 @@ As respostas dos participantes estão numeradas de acordo com a tabela acima. Os
 
 ## Respostas Atividade 1 - Cadastro do usuário
 
+Imagem mostra tela de cadastro de usuário abaixo:
+![image](https://user-images.githubusercontent.com/41563209/206876246-bd39f5b5-7188-4a13-a1c4-c56782a66fa1.png)
 ### Você poderia falar mais sobre a ação?
 01. Não encontreio o botão para efetuar o cadastro.
 02. O botão cadastro não estava disponível para mim na página inicial.
@@ -70,6 +72,10 @@ As respostas dos participantes estão numeradas de acordo com a tabela acima. Os
 05. Aparentemente não
 
 ## Respostas Atividade 2 - Log in do usuário
+
+Abaixo imagem do log in do usuário:
+![image](https://user-images.githubusercontent.com/41563209/206876300-f611eb41-c02b-4499-985e-71530c2c7d95.png)
+
 
 ### Você poderia falar mais sobre a ação?
 01. Cliquei no botão de log in e entrou em uma página para eu colocar o usuário e senha
@@ -342,6 +348,8 @@ As respostas dos participantes estão numeradas de acordo com a tabela acima. Os
 05. Não há
 
 ## Respostas Atividade 3 - Cadastro de Estacionamento ou Serviço
+Imagem da tela abaixo:
+![image](https://user-images.githubusercontent.com/41563209/206876378-12d76b6d-7104-4822-bf3a-58c524b64ed8.png)
 
 ### Você poderia falar mais sobre a ação?
 01. Não achei o lugar pra cadastrar
@@ -386,6 +394,8 @@ As respostas dos participantes estão numeradas de acordo com a tabela acima. Os
 05. Não há
 
 ## Respostas Atividade 4 - Atualização de Estacionamento ou Serviço
+Exemplo de tela de atualização de Estacionamento abaixo:
+![image](https://user-images.githubusercontent.com/41563209/206876397-dc172706-3feb-4ed2-adb8-0939aefc611e.png)
 
 ### Você poderia falar mais sobre a ação?
 01. Não achei o lugar pra atualizar
@@ -424,6 +434,8 @@ As respostas dos participantes estão numeradas de acordo com a tabela acima. Os
 
 
 ## Respostas Atividade 5 - Remoção de Estacionamento ou Serviço
+Exemplo de tela de remoção de estacionamento:
+![image](https://user-images.githubusercontent.com/41563209/206876431-a4716d6a-c027-4897-b1b8-cbe705ea0363.png)
 
 ### Você poderia falar mais sobre a ação?
 01. Não achei o lugar pra remover

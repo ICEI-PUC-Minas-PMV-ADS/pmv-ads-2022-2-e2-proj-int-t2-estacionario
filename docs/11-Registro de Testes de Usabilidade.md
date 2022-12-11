@@ -14,7 +14,9 @@ As respostas dos participantes estão numeradas de acordo com a tabela acima. Os
 ## Respostas Atividade 1 - Cadastro do usuário
 
 Imagem mostra tela de cadastro de usuário abaixo:
+
 ![image](https://user-images.githubusercontent.com/41563209/206876246-bd39f5b5-7188-4a13-a1c4-c56782a66fa1.png)
+
 ### Você poderia falar mais sobre a ação?
 01. Não encontreio o botão para efetuar o cadastro.
 02. O botão cadastro não estava disponível para mim na página inicial.
@@ -39,8 +41,8 @@ Imagem mostra tela de cadastro de usuário abaixo:
 ### O que isso significa para você?
 01. Sem resposta do participante
 02. Sem resposta do participante
-03. 
-04. 
+03. Indiferente
+04. Nada em particular
 05. Nada
 
 ### O que você faria em seguida?
@@ -74,6 +76,7 @@ Imagem mostra tela de cadastro de usuário abaixo:
 ## Respostas Atividade 2 - Log in do usuário
 
 Abaixo imagem do log in do usuário:
+
 ![image](https://user-images.githubusercontent.com/41563209/206876300-f611eb41-c02b-4499-985e-71530c2c7d95.png)
 
 
@@ -223,7 +226,7 @@ As respostas dos participantes estão numeradas de acordo com a tabela acima. Os
 
 Os testes foram realizados nos dias 24 a 26 de novembro de 2022 com os participantes:
 | Participantes | Nome | Condição |
-| :------------: | ------------------------------------------------------------------------------- | ------ |
+| :------------: | ---------------------------- | ------ |
 | 1 | Gustavo Matos | Proprietário de Estacionamento |
 | 2 | Kézia Assunção | Proprietária de Guincho |
 | 3 | Arthur Lourdes | Proprietário de Chaveiro |
@@ -349,6 +352,7 @@ As respostas dos participantes estão numeradas de acordo com a tabela acima. Os
 
 ## Respostas Atividade 3 - Cadastro de Estacionamento ou Serviço
 Imagem da tela abaixo:
+
 ![image](https://user-images.githubusercontent.com/41563209/206876378-12d76b6d-7104-4822-bf3a-58c524b64ed8.png)
 
 ### Você poderia falar mais sobre a ação?
@@ -395,6 +399,7 @@ Imagem da tela abaixo:
 
 ## Respostas Atividade 4 - Atualização de Estacionamento ou Serviço
 Exemplo de tela de atualização de Estacionamento abaixo:
+
 ![image](https://user-images.githubusercontent.com/41563209/206876397-dc172706-3feb-4ed2-adb8-0939aefc611e.png)
 
 ### Você poderia falar mais sobre a ação?
@@ -435,6 +440,7 @@ Exemplo de tela de atualização de Estacionamento abaixo:
 
 ## Respostas Atividade 5 - Remoção de Estacionamento ou Serviço
 Exemplo de tela de remoção de estacionamento:
+
 ![image](https://user-images.githubusercontent.com/41563209/206876431-a4716d6a-c027-4897-b1b8-cbe705ea0363.png)
 
 ### Você poderia falar mais sobre a ação?

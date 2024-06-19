@@ -1,0 +1,26 @@
+message: Please cite this software using these metadata.
+title: Brasil Acassível
+authors:
+  - family-names: Balbi de Faria Junior
+    given-names: Cristian  
+  - family-names: Ferreira Moraes de Paula
+    given-names:  Felipe
+  - family-names: Maia Torres Alves
+    given-names: Fernando  
+  - family-names: Possidonio Da Silva
+    given-names: Jhody Mike
+  - family-names: Guimarães Costa Rocha
+    given-names: Marcos    
+  - family-names: de Souza Ponciano
+    given-names: Vinicius  
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: da Costa
+    given-names: José Wilson
+keywords:
+  - Estacionamento
+  - Servicos para automóveis 
+  - Vagas automóveis
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t2-estacionario/tree/main
+version: 1.0.0
+date-released: 2022-12-11
